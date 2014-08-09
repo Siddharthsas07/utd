@@ -1,0 +1,48 @@
+CS Entry Log for node 7
+	0: wait_time = 1.17757 msg_count = 10
+	1: wait_time = 2.94411 msg_count = 10
+	2: wait_time = 3.96356 msg_count = 10
+	3: wait_time = 3.53336 msg_count = 10
+	4: wait_time = 6.21946 msg_count = 10
+	5: wait_time = 3.72879 msg_count = 10
+	6: wait_time = 3.92158 msg_count = 10
+	7: wait_time = 2.91355 msg_count = 10
+	8: wait_time = 3.60844 msg_count = 10
+	9: wait_time = 3.69422 msg_count = 10
+	10: wait_time = 3.34977 msg_count = 10
+	11: wait_time = 4.58027 msg_count = 10
+	12: wait_time = 4.04987 msg_count = 10
+	13: wait_time = 3.31941 msg_count = 10
+	14: wait_time = 3.30574 msg_count = 10
+	15: wait_time = 3.58423 msg_count = 10
+	16: wait_time = 2.95115 msg_count = 10
+	17: wait_time = 3.46346 msg_count = 10
+	18: wait_time = 3.97798 msg_count = 10
+	19: wait_time = 4.55624 msg_count = 10
+	20: wait_time = 3.27792 msg_count = 10
+	21: wait_time = 3.10191 msg_count = 10
+	22: wait_time = 2.92874 msg_count = 10
+	23: wait_time = 3.5317 msg_count = 10
+	24: wait_time = 3.64691 msg_count = 10
+	25: wait_time = 2.98833 msg_count = 10
+	26: wait_time = 3.57908 msg_count = 10
+	27: wait_time = 3.42484 msg_count = 10
+	28: wait_time = 2.64806 msg_count = 10
+	29: wait_time = 3.72593 msg_count = 10
+	30: wait_time = 3.07989 msg_count = 10
+	31: wait_time = 6.10564 msg_count = 10
+	32: wait_time = 3.66452 msg_count = 10
+	33: wait_time = 2.88709 msg_count = 10
+	34: wait_time = 3.79191 msg_count = 10
+	35: wait_time = 4.16277 msg_count = 10
+	36: wait_time = 3.87025 msg_count = 10
+	37: wait_time = 6.00566 msg_count = 10
+	38: wait_time = 3.6734 msg_count = 10
+	39: wait_time = 3.37425 msg_count = 10
+Overall: 
+	Total wait_time = 146.312
+	Average wait_time = 3.65779
+	Total messages = 400
+	Average msg_count = 10
+	Minimum msg_count = 10
+	Maximum msg_count = 10

@@ -1,0 +1,28 @@
+CS Entry Log for node 1
+	i: wait_time = 0.706085 msg_count = 4
+	i: wait_time = 1.21122 msg_count = 4
+	i: wait_time = 0.949527 msg_count = 4
+	i: wait_time = 3e-06 msg_count = 0
+	i: wait_time = 1.07052 msg_count = 4
+	i: wait_time = 2.78647 msg_count = 4
+	i: wait_time = 0.060407 msg_count = 2
+	i: wait_time = 0.815487 msg_count = 4
+	i: wait_time = 0.318132 msg_count = 4
+	i: wait_time = 0.044472 msg_count = 4
+	i: wait_time = 0.107478 msg_count = 4
+	i: wait_time = 0.003803 msg_count = 2
+	i: wait_time = 0.870262 msg_count = 4
+	i: wait_time = 0.114743 msg_count = 2
+	i: wait_time = 0.000181 msg_count = 2
+	i: wait_time = 0.010773 msg_count = 4
+	i: wait_time = 0.004228 msg_count = 2
+	i: wait_time = 0.105968 msg_count = 4
+	i: wait_time = 6.2e-05 msg_count = 2
+	i: wait_time = 0.038853 msg_count = 2
+Overall: 
+	Total wait_time = 9.21868
+	Average wait_time = 0.460934
+	Total messages = 62
+	Average msg_count = 3.1
+	Minimum msg_count = 0
+	Maximum msg_count = 4

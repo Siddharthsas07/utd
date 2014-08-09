@@ -1,0 +1,157 @@
+\hypertarget{uno__card_8cpp}{
+\section{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-card.cpp \-File \-Reference}
+\label{uno__card_8cpp}\index{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-card.\-cpp@{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-card.\-cpp}}
+}
+
+
+\-Contains function definitions for an \-Uno deck.  
+
+
+{\ttfamily \#include \char`\"{}uno\-\_\-card.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{uno__card_8cpp_a07e79d8e9cc0a93f105f6203cfa4403d}{map\-\_\-names} ()
+\begin{DoxyCompactList}\small\item\em \-Instantiates a user-\/readable dictionary of names for a card. \end{DoxyCompactList}\item 
+string \hyperlink{uno__card_8cpp_a6fc45c14cfbf3fb7529da60c1040d915}{card\-\_\-name} (\hyperlink{uno__card_8h_ab16a632e2e3f1f154cce75648902eb83}{card} c)
+\begin{DoxyCompactList}\small\item\em \-Gets the name of an \-Uno card. \end{DoxyCompactList}\item 
+void \hyperlink{uno__card_8cpp_ab8eab77308199772ca67568adc9621c4}{map\-\_\-weights} ()
+\begin{DoxyCompactList}\small\item\em \-Instantiates a user-\/readable dictionary of weights for cards. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{uno__card_8cpp_a2ad96347628c97a1314ef0fbf80b670c}{card\-\_\-weight} (\hyperlink{uno__card_8h_ab16a632e2e3f1f154cce75648902eb83}{card} c)
+\begin{DoxyCompactList}\small\item\em \-Gets the weight of an \-Uno card. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{uno__card_8h_ab0a87a80ff6aee1dcc997c9c1305dc5f}{card\-\_\-name\-\_\-dictionary} \hyperlink{uno__card_8cpp_a9a60ee628eaeb26892b150cd9a900635}{\-C\-A\-R\-D\-\_\-\-N\-A\-M\-E}
+\begin{DoxyCompactList}\small\item\em \-A map of card types to card names. \end{DoxyCompactList}\item 
+\hyperlink{uno__card_8h_afbfc08e5d5ea3a4c76209c809fd0a9ad}{card\-\_\-weight\-\_\-dictionary} \hyperlink{uno__card_8cpp_add681af275b3f7bd9364c58e2459b60b}{\-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T}
+\begin{DoxyCompactList}\small\item\em \-A map of card types to card weights. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains function definitions for an \-Uno deck. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__card_8h}{uno\-\_\-card.\-h} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{uno__card_8cpp_a6fc45c14cfbf3fb7529da60c1040d915}{
+\index{uno\-\_\-card.\-cpp@{uno\-\_\-card.\-cpp}!card\-\_\-name@{card\-\_\-name}}
+\index{card\-\_\-name@{card\-\_\-name}!uno_card.cpp@{uno\-\_\-card.\-cpp}}
+\subsubsection[{card\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string card\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{{\bf card}}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{uno__card_8cpp_a6fc45c14cfbf3fb7529da60c1040d915}
+
+
+\-Gets the name of an \-Uno card. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em c} & \-The card to get the name of. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em string} & \-The name of the card.\\
+\hline
+\end{DoxyRetVals}
+\-The card names will come back something like \char`\"{}\-R5\char`\"{} for a red five, or \char`\"{}\-Y\-D2\char`\"{} for a yellow draw two. \begin{DoxyNote}{\-Note}
+\-A reverse card will have a type of \char`\"{}\-R\char`\"{}. \-So \char`\"{}\-Y\-R\char`\"{} means a yellow reverse. \-This is not to be confused with \char`\"{}\-R\char`\"{} for the color red. 
+\end{DoxyNote}
+\hypertarget{uno__card_8cpp_a2ad96347628c97a1314ef0fbf80b670c}{
+\index{uno\-\_\-card.\-cpp@{uno\-\_\-card.\-cpp}!card\-\_\-weight@{card\-\_\-weight}}
+\index{card\-\_\-weight@{card\-\_\-weight}!uno_card.cpp@{uno\-\_\-card.\-cpp}}
+\subsubsection[{card\-\_\-weight}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char card\-\_\-weight (
+\begin{DoxyParamCaption}
+\item[{{\bf card}}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{uno__card_8cpp_a2ad96347628c97a1314ef0fbf80b670c}
+
+
+\-Gets the weight of an \-Uno card. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em c} & \-The card to get the weight of. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em unsigned} & char \-The weight of the card. \-For a regulation game, the weights are the points a player gets at the end of the game for his opponents having a given card, c, in their hand. \-Point values mapped according to regulation, are\-: \begin{DoxyItemize}
+\item \-Number cards -\/ \-Face value points (0-\/9 is 0-\/9 points, respectively) \item \-Draw \-Two – 20 \-Points \item \-Reverse – 20 \-Points \item \-Skip – 20 \-Points \item \-Wild – 50 \-Points \item \-Wild \-Draw – 50 \-Points \end{DoxyItemize}
+\\
+\hline
+\end{DoxyRetVals}
+\hypertarget{uno__card_8cpp_a07e79d8e9cc0a93f105f6203cfa4403d}{
+\index{uno\-\_\-card.\-cpp@{uno\-\_\-card.\-cpp}!map\-\_\-names@{map\-\_\-names}}
+\index{map\-\_\-names@{map\-\_\-names}!uno_card.cpp@{uno\-\_\-card.\-cpp}}
+\subsubsection[{map\-\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}void map\-\_\-names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{uno__card_8cpp_a07e79d8e9cc0a93f105f6203cfa4403d}
+
+
+\-Instantiates a user-\/readable dictionary of names for a card. 
+
+\begin{DoxyNote}{\-Note}
+\-You only need to do this one time. 
+\end{DoxyNote}
+\hypertarget{uno__card_8cpp_ab8eab77308199772ca67568adc9621c4}{
+\index{uno\-\_\-card.\-cpp@{uno\-\_\-card.\-cpp}!map\-\_\-weights@{map\-\_\-weights}}
+\index{map\-\_\-weights@{map\-\_\-weights}!uno_card.cpp@{uno\-\_\-card.\-cpp}}
+\subsubsection[{map\-\_\-weights}]{\setlength{\rightskip}{0pt plus 5cm}void map\-\_\-weights (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{uno__card_8cpp_ab8eab77308199772ca67568adc9621c4}
+
+
+\-Instantiates a user-\/readable dictionary of weights for cards. 
+
+\begin{DoxyNote}{\-Note}
+\-You only need to do this one time. \-For a regulation game, the weights are the points a player gets at the end of the game for his opponents having a given card, c, in their hand. 
+\end{DoxyNote}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{uno__card_8cpp_a9a60ee628eaeb26892b150cd9a900635}{
+\index{uno\-\_\-card.\-cpp@{uno\-\_\-card.\-cpp}!\-C\-A\-R\-D\-\_\-\-N\-A\-M\-E@{\-C\-A\-R\-D\-\_\-\-N\-A\-M\-E}}
+\index{\-C\-A\-R\-D\-\_\-\-N\-A\-M\-E@{\-C\-A\-R\-D\-\_\-\-N\-A\-M\-E}!uno_card.cpp@{uno\-\_\-card.\-cpp}}
+\subsubsection[{\-C\-A\-R\-D\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}{\bf card\-\_\-name\-\_\-dictionary} {\bf \-C\-A\-R\-D\-\_\-\-N\-A\-M\-E}}}
+\label{uno__card_8cpp_a9a60ee628eaeb26892b150cd9a900635}
+
+
+\-A map of card types to card names. 
+
+\-The map is arranged such that card names can be accessed using the \-C\-A\-R\-D macro function. \begin{DoxyNote}{\-Note}
+\-The map must be populated with \hyperlink{uno__card_8cpp_a07e79d8e9cc0a93f105f6203cfa4403d}{map\-\_\-names()} before this map can be effectively used. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{\-See also}
+void \hyperlink{uno__card_8cpp_a07e79d8e9cc0a93f105f6203cfa4403d}{map\-\_\-names()} 
+
+string \hyperlink{uno__card_8h_a6fc45c14cfbf3fb7529da60c1040d915}{card\-\_\-name( card c )} 
+\end{DoxySeeAlso}
+\hypertarget{uno__card_8cpp_add681af275b3f7bd9364c58e2459b60b}{
+\index{uno\-\_\-card.\-cpp@{uno\-\_\-card.\-cpp}!\-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T@{\-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T}}
+\index{\-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T@{\-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T}!uno_card.cpp@{uno\-\_\-card.\-cpp}}
+\subsubsection[{\-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}{\bf card\-\_\-weight\-\_\-dictionary} {\bf \-C\-A\-R\-D\-\_\-\-W\-E\-I\-G\-H\-T}}}
+\label{uno__card_8cpp_add681af275b3f7bd9364c58e2459b60b}
+
+
+\-A map of card types to card weights. 
+
+\-The map is arranged such that card weights can be accessed using the \-C\-A\-R\-D macro function. \begin{DoxyNote}{\-Note}
+\-The map must be populated with \hyperlink{uno__card_8cpp_ab8eab77308199772ca67568adc9621c4}{map\-\_\-weights()} before this map can be effectively used. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{\-See also}
+void \hyperlink{uno__card_8cpp_ab8eab77308199772ca67568adc9621c4}{map\-\_\-weights()} 
+
+unsigned char \hyperlink{uno__card_8h_a2ad96347628c97a1314ef0fbf80b670c}{card\-\_\-weight( card c )} 
+\end{DoxySeeAlso}

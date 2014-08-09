@@ -1,0 +1,48 @@
+Zero Weights processed. Default weights will be used
+*
+optimization finished, #iter = 111
+nu = 0.3350682765880811
+obj = -227.02986825807045, rho = -2.428733945524142
+nSV = 159, nBSV = 153
+Total nSV = 159
+
+Time taken to build model: 0.7 seconds
+Time taken to test model on training data: 0.5 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         364               78.6177 %
+Incorrectly Classified Instances        99               21.3823 %
+Kappa statistic                          0.4236
+Mean absolute error                      0.2138
+Root mean squared error                  0.4624
+Relative absolute error                 54.7365 %
+Root relative squared error            104.6923 %
+Total Number of Instances              463     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 300  40 |   a = -1
+  59  64 |   b = 1
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         374               78.2427 %
+Incorrectly Classified Instances       104               21.7573 %
+Kappa statistic                          0.4108
+Mean absolute error                      0.2176
+Root mean squared error                  0.4664
+Relative absolute error                 55.2799 %
+Root relative squared error            104.8186 %
+Total Number of Instances              478     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 310  38 |   a = -1
+  66  64 |   b = 1
+

@@ -1,0 +1,85 @@
+\hypertarget{class_uno___p_state}{
+\section{\-Uno\-\_\-\-P\-State \-Class \-Reference}
+\label{class_uno___p_state}\index{\-Uno\-\_\-\-P\-State@{\-Uno\-\_\-\-P\-State}}
+}
+
+
+\-Contains the player, limited view of the game state.  
+
+
+
+
+{\ttfamily \#include $<$uno\-\_\-pstate.\-h$>$}
+
+\-Inheritance diagram for \-Uno\-\_\-\-P\-State\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_uno___p_state}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_uno___p_state_aafaaf283df233adbb7d3cac2eaf9199d}{\-Uno\-\_\-\-P\-State} ()
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_uno___p_state_a8e4b3ec3783d8ed58bd761ac6c7be3b6}{
+vector$<$ unsigned int $>$ \hyperlink{class_uno___p_state_a8e4b3ec3783d8ed58bd761ac6c7be3b6}{m\-\_\-hand\-\_\-counts}}
+\label{class_uno___p_state_a8e4b3ec3783d8ed58bd761ac6c7be3b6}
+
+\begin{DoxyCompactList}\small\item\em \-Counts of cards in all players' hands. \end{DoxyCompactList}\item 
+\hyperlink{uno__pstate_8h_acd9523c15e47a87e3740cf5ade73556e}{hand} \hyperlink{class_uno___p_state_ae83f531e09b87d69dccb49bf44af4e0a}{m\-\_\-hand}
+\begin{DoxyCompactList}\small\item\em \-The player's hand of cards. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_uno___p_state_ab5532c7fefcd10fc39a7a07b627ff5c5}{m\-\_\-unplayed\-\_\-count}
+\begin{DoxyCompactList}\small\item\em \-The count of the cards in the unplayed deck. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains the player, limited view of the game state. 
+
+\-This class contains the information for\-: \begin{DoxyItemize}
+\item \-Count of cards in players' hands. \item \-List of cards in this player's hand. \item \-Player at play. \item \-Turn count. \item \-Count of cards left in unplayed deck. \item \-Played deck of cards. \item \-Time allowance per turn. \end{DoxyItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_uno___p_state_aafaaf283df233adbb7d3cac2eaf9199d}{
+\index{\-Uno\-\_\-\-P\-State@{\-Uno\-\_\-\-P\-State}!\-Uno\-\_\-\-P\-State@{\-Uno\-\_\-\-P\-State}}
+\index{\-Uno\-\_\-\-P\-State@{\-Uno\-\_\-\-P\-State}!Uno_PState@{\-Uno\-\_\-\-P\-State}}
+\subsubsection[{\-Uno\-\_\-\-P\-State}]{\setlength{\rightskip}{0pt plus 5cm}\-Uno\-\_\-\-P\-State\-::\-Uno\-\_\-\-P\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_uno___p_state_aafaaf283df233adbb7d3cac2eaf9199d}
+
+
+\-Default constructor. 
+
+\-Constructs an \hyperlink{class_uno___p_state}{\-Uno\-\_\-\-P\-State} with empty and zero values. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_uno___p_state_ae83f531e09b87d69dccb49bf44af4e0a}{
+\index{\-Uno\-\_\-\-P\-State@{\-Uno\-\_\-\-P\-State}!m\-\_\-hand@{m\-\_\-hand}}
+\index{m\-\_\-hand@{m\-\_\-hand}!Uno_PState@{\-Uno\-\_\-\-P\-State}}
+\subsubsection[{m\-\_\-hand}]{\setlength{\rightskip}{0pt plus 5cm}{\bf hand} {\bf \-Uno\-\_\-\-P\-State\-::m\-\_\-hand}}}
+\label{class_uno___p_state_ae83f531e09b87d69dccb49bf44af4e0a}
+
+
+\-The player's hand of cards. 
+
+\-The player's hand of cards is initially 7 cards drawn from a deck. \hypertarget{class_uno___p_state_ab5532c7fefcd10fc39a7a07b627ff5c5}{
+\index{\-Uno\-\_\-\-P\-State@{\-Uno\-\_\-\-P\-State}!m\-\_\-unplayed\-\_\-count@{m\-\_\-unplayed\-\_\-count}}
+\index{m\-\_\-unplayed\-\_\-count@{m\-\_\-unplayed\-\_\-count}!Uno_PState@{\-Uno\-\_\-\-P\-State}}
+\subsubsection[{m\-\_\-unplayed\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Uno\-\_\-\-P\-State\-::m\-\_\-unplayed\-\_\-count}}}
+\label{class_uno___p_state_ab5532c7fefcd10fc39a7a07b627ff5c5}
+
+
+\-The count of the cards in the unplayed deck. 
+
+\-This is the count of the face-\/down stack of cards players draw from when they cannot play a card from their hand. 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__pstate_8h}{uno\-\_\-pstate.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+-1
+enron1/test/ham/
+-1
+enron4/test/ham/
+1
+enron1/test/spam/
+1
+enron4/test/spam/

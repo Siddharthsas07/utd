@@ -1,0 +1,4 @@
+-1
+train/ham/
+1
+train/spam/

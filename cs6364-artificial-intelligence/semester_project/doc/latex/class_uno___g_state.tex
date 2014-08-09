@@ -1,0 +1,58 @@
+\hypertarget{class_uno___g_state}{
+\section{\-Uno\-\_\-\-G\-State \-Class \-Reference}
+\label{class_uno___g_state}\index{\-Uno\-\_\-\-G\-State@{\-Uno\-\_\-\-G\-State}}
+}
+
+
+\-Contains the full omniscient server view of the game state.  
+
+
+
+
+{\ttfamily \#include $<$uno\-\_\-gstate.\-h$>$}
+
+\-Inheritance diagram for \-Uno\-\_\-\-G\-State\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_uno___g_state}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_uno___g_state_acf0593a856c85059d8bd6bc71ee3165c}{
+vector$<$ \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player} $>$ \hyperlink{class_uno___g_state_acf0593a856c85059d8bd6bc71ee3165c}{m\-\_\-players}}
+\label{class_uno___g_state_acf0593a856c85059d8bd6bc71ee3165c}
+
+\begin{DoxyCompactList}\small\item\em \-The list of players currently in the game. \end{DoxyCompactList}\item 
+\hypertarget{class_uno___g_state_a684bf43892cc1477cf54943c8eb092a6}{
+vector$<$ list$<$ \hyperlink{uno__card_8h_ab16a632e2e3f1f154cce75648902eb83}{card} $>$ $>$ \hyperlink{class_uno___g_state_a684bf43892cc1477cf54943c8eb092a6}{m\-\_\-hands}}
+\label{class_uno___g_state_a684bf43892cc1477cf54943c8eb092a6}
+
+\begin{DoxyCompactList}\small\item\em \-The list of hands for players currently in the game. \end{DoxyCompactList}\item 
+\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \hyperlink{class_uno___g_state_afcc8256ce8ae779aa3e529f33a8818c1}{m\-\_\-unplayed}
+\begin{DoxyCompactList}\small\item\em \-The unplayed deck of cards for this game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains the full omniscient server view of the game state. 
+
+\-This class contains the information for\-: \begin{DoxyItemize}
+\item \-List of \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player} (s). \item \-Player at play. \item \-Turn count. \item \-Unplayed deck of cards. \item \-Played deck of cards. \item \-Time allowance per turn. \end{DoxyItemize}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_uno___g_state_afcc8256ce8ae779aa3e529f33a8818c1}{
+\index{\-Uno\-\_\-\-G\-State@{\-Uno\-\_\-\-G\-State}!m\-\_\-unplayed@{m\-\_\-unplayed}}
+\index{m\-\_\-unplayed@{m\-\_\-unplayed}!Uno_GState@{\-Uno\-\_\-\-G\-State}}
+\subsubsection[{m\-\_\-unplayed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf deck} {\bf \-Uno\-\_\-\-G\-State\-::m\-\_\-unplayed}}}
+\label{class_uno___g_state_afcc8256ce8ae779aa3e529f33a8818c1}
+
+
+\-The unplayed deck of cards for this game. 
+
+\-This is the face-\/down stack of cards players draw from when they cannot play a card from their hand. 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__gstate_8h}{uno\-\_\-gstate.\-h}\end{DoxyCompactItemize}

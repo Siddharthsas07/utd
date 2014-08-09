@@ -1,0 +1,69 @@
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/grid3x3.uai
+Reading test/grid3x3.uai.evid
+Read files: 0.04369433 s.
+Instantiated evidence: 4.9449E-5 s.
+Width of Min-Degree order: 3
+Computed Z or P: 0.013489659 s.
+log_10(Z or P) = 22.82741466188653
+       Z or P  = 6.720702354986621E22
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/grid4x4.uai
+Reading test/grid4x4.uai.evid
+Read files: 0.047866668 s.
+Instantiated evidence: 5.5513E-5 s.
+Width of Min-Degree order: 4
+Computed Z or P: 0.02326088 s.
+log_10(Z or P) = 44.44954357211642
+       Z or P  = 2.8154224680932593E44
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/network.uai
+Reading test/network.uai.evid
+Read files: 0.117262584 s.
+Instantiated evidence: 1.55343E-4 s.
+Width of Min-Degree order: 9
+Computed Z or P: 0.114704788 s.
+log_10(Z or P) = 163.20402963336167
+       Z or P  = 1.599667175520115E163
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/BN_4.uai
+Reading test/BN_4.uai.evid
+Read files: 8.384539023 s.
+Instantiated evidence: 0.092095135 s.
+Width of Min-Degree order: 18
+Computed Z or P: 7.858915341 s.
+log_10(Z or P) = -1.7333411225880888
+       Z or P  = 0.01847816655753799
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/BN_5.uai
+Reading test/BN_5.uai.evid
+Read files: 6.479412607 s.
+Instantiated evidence: 0.066686975 s.
+Width of Min-Degree order: 20
+Computed Z or P: 57.525307864 s.
+log_10(Z or P) = -1.1343912541391457
+       Z or P  = 0.07338524455704705
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/BN_6.uai
+Reading test/BN_6.uai.evid
+Read files: 0.499397288 s.
+Instantiated evidence: 0.01734478 s.
+Width of Min-Degree order: 55
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/BN_7.uai
+Reading test/BN_7.uai.evid
+Read files: 10.172148148 s.
+Instantiated evidence: 0.089282632 s.
+Width of Min-Degree order: 19
+Computed Z or P: 23.460121607 s.
+log_10(Z or P) = -1.6327183379034005
+       Z or P  = 0.023296016331747514
+Running directory: C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models\homework3
+Reading test/BN_8.uai
+Reading test/BN_8.uai.evid
+Read files: 1.148398846 s.
+Instantiated evidence: 0.003116658 s.
+Width of Min-Degree order: 6
+Computed Z or P: 55.306594105 s.
+log_10(Z or P) = -23.598111633951365
+       Z or P  = 2.5228322035052502E-24

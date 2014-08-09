@@ -1,0 +1,4 @@
+-1
+test/ham/
+1
+test/spam/

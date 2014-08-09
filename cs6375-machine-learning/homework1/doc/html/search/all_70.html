@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_pos">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="../class_data_set.html#a427f8c833433885f5dac9c81202702df" target="_parent">POS</a>
+  <span class="SRScope">DataSet</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_print">
+ <div class="SREntry">
+  <a id="Item1" onkeydown="return searchResults.Nav(event,1)" onkeypress="return searchResults.Nav(event,1)" onkeyup="return searchResults.Nav(event,1)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_print')">print</a>
+  <div class="SRChildren">
+    <a id="Item1_c0" onkeydown="return searchResults.NavChild(event,1,0)" onkeypress="return searchResults.NavChild(event,1,0)" onkeyup="return searchResults.NavChild(event,1,0)" class="SRScope" href="../class_data_set.html#ab40471aa13b3cb5ce2c121f081101243" target="_parent">DataSet::print()</a>
+    <a id="Item1_c1" onkeydown="return searchResults.NavChild(event,1,1)" onkeypress="return searchResults.NavChild(event,1,1)" onkeyup="return searchResults.NavChild(event,1,1)" class="SRScope" href="../class_decision_tree.html#af4789a78b565c5eff932279e9945a9b8" target="_parent">DecisionTree::print()</a>
+  </div>
+ </div>
+</div>
+<div class="SRResult" id="SR_prune">
+ <div class="SREntry">
+  <a id="Item2" onkeydown="return searchResults.Nav(event,2)" onkeypress="return searchResults.Nav(event,2)" onkeyup="return searchResults.Nav(event,2)" class="SRSymbol" href="../class_decision_tree.html#a1a8013ee83e339f2c9595eb3d97e73b2" target="_parent">prune</a>
+  <span class="SRScope">DecisionTree</span>
+ </div>
+</div>
+<div class="SRResult" id="SR_pure">
+ <div class="SREntry">
+  <a id="Item3" onkeydown="return searchResults.Nav(event,3)" onkeypress="return searchResults.Nav(event,3)" onkeyup="return searchResults.Nav(event,3)" class="SRSymbol" href="../class_data_set.html#afcaf22b32e6a10a3561e84caa429806b" target="_parent">pure</a>
+  <span class="SRScope">DataSet</span>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

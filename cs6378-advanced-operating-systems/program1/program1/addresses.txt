@@ -1,0 +1,8 @@
+4629
+0
+0
+net15.utdallas.edu
+1
+net16.utdallas.edu
+2
+net17.utdallas.edu

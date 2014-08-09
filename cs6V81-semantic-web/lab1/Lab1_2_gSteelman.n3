@@ -1,0 +1,17 @@
+@prefix nsUTD:   <http://utdallas/semclass#> .
+
+nsUTD:stevenSeida
+      <http://www.w3.org/2001/vcard-rdf/3.0#BDAY>
+              "January 1, 1901" ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#EMAIL>
+              "steven.seida@utdallas.edu" ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+              "Steven Seida" ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#N>
+              [ <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+                        "Seida" ;
+                <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+                        "Steven"
+              ] ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#TITLE>
+              "Senior Lecturer" .

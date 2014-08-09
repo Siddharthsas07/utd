@@ -1,0 +1,86 @@
+\hypertarget{class_uno___game___state}{
+\section{\-Uno\-\_\-\-Game\-\_\-\-State \-Class \-Reference}
+\label{class_uno___game___state}\index{\-Uno\-\_\-\-Game\-\_\-\-State@{\-Uno\-\_\-\-Game\-\_\-\-State}}
+}
+
+
+\-Holds the state of the game.  
+
+
+
+
+{\ttfamily \#include $<$uno\-\_\-game\-\_\-state.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_uno___game___state_a8c17d72f7a46910c00e916e5df76f7f5}{
+\hyperlink{class_uno___game___state_a8c17d72f7a46910c00e916e5df76f7f5}{\-Uno\-\_\-\-Game\-\_\-\-State} ()}
+\label{class_uno___game___state_a8c17d72f7a46910c00e916e5df76f7f5}
+
+\begin{DoxyCompactList}\small\item\em \-Default constructor, no values assigned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_uno___game___state_a9fa2f495b04ea9572d2df80c30a28b8d}{
+vector$<$ unsigned int $>$ \hyperlink{class_uno___game___state_a9fa2f495b04ea9572d2df80c30a28b8d}{m\-\_\-hand\-\_\-counts}}
+\label{class_uno___game___state_a9fa2f495b04ea9572d2df80c30a28b8d}
+
+\begin{DoxyCompactList}\small\item\em \-The number of cards in each player's hand. \end{DoxyCompactList}\item 
+\hypertarget{class_uno___game___state_a85a2ea5d9e50359519aeeef2589fa8cf}{
+unsigned int \hyperlink{class_uno___game___state_a85a2ea5d9e50359519aeeef2589fa8cf}{m\-\_\-turn}}
+\label{class_uno___game___state_a85a2ea5d9e50359519aeeef2589fa8cf}
+
+\begin{DoxyCompactList}\small\item\em \-The index of the player whose turn it is. \end{DoxyCompactList}\item 
+\hypertarget{class_uno___game___state_abc3bb6447a74a7bf28c1dfbbfdcd6d55}{
+unsigned int \hyperlink{class_uno___game___state_abc3bb6447a74a7bf28c1dfbbfdcd6d55}{m\-\_\-turn\-\_\-count}}
+\label{class_uno___game___state_abc3bb6447a74a7bf28c1dfbbfdcd6d55}
+
+\begin{DoxyCompactList}\small\item\em \-The turn count. \-The number of turns elapsed in the game. \end{DoxyCompactList}\item 
+\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \hyperlink{class_uno___game___state_a7bf61c252c9de176f309b691b4038345}{m\-\_\-unplayed}
+\begin{DoxyCompactList}\small\item\em \-The unplayed deck of cards for this game. \end{DoxyCompactList}\item 
+\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \hyperlink{class_uno___game___state_ae274bd2383addaefbc78556c48757c35}{m\-\_\-played}
+\begin{DoxyCompactList}\small\item\em \-The played deck of cards for this game. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_uno___game___state_ad55fa08fbfc6ddf4359194857dbd99fc}{m\-\_\-eval\-\_\-score}
+\begin{DoxyCompactList}\small\item\em \-A heuristic score evaluation for this state for an \-A\-I player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Holds the state of the game. 
+
+\-Includes the players, whose turn it is, the unplayed and played cards, and, for an \-A\-I player, the evaluation score of the state. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_uno___game___state_ad55fa08fbfc6ddf4359194857dbd99fc}{
+\index{\-Uno\-\_\-\-Game\-\_\-\-State@{\-Uno\-\_\-\-Game\-\_\-\-State}!m\-\_\-eval\-\_\-score@{m\-\_\-eval\-\_\-score}}
+\index{m\-\_\-eval\-\_\-score@{m\-\_\-eval\-\_\-score}!Uno_Game_State@{\-Uno\-\_\-\-Game\-\_\-\-State}}
+\subsubsection[{m\-\_\-eval\-\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Uno\-\_\-\-Game\-\_\-\-State\-::m\-\_\-eval\-\_\-score}}}
+\label{class_uno___game___state_ad55fa08fbfc6ddf4359194857dbd99fc}
+
+
+\-A heuristic score evaluation for this state for an \-A\-I player. 
+
+\-This value is rather meaningless for a real player, but for an \-A\-I player this represents how \char`\"{}good\char`\"{} a state is. \-A state that represents a loss for the player whose turn it is will have an extremely low value. \hypertarget{class_uno___game___state_ae274bd2383addaefbc78556c48757c35}{
+\index{\-Uno\-\_\-\-Game\-\_\-\-State@{\-Uno\-\_\-\-Game\-\_\-\-State}!m\-\_\-played@{m\-\_\-played}}
+\index{m\-\_\-played@{m\-\_\-played}!Uno_Game_State@{\-Uno\-\_\-\-Game\-\_\-\-State}}
+\subsubsection[{m\-\_\-played}]{\setlength{\rightskip}{0pt plus 5cm}{\bf deck} {\bf \-Uno\-\_\-\-Game\-\_\-\-State\-::m\-\_\-played}}}
+\label{class_uno___game___state_ae274bd2383addaefbc78556c48757c35}
+
+
+\-The played deck of cards for this game. 
+
+\-When a player plays a card it is placed on top of this deck. \hypertarget{class_uno___game___state_a7bf61c252c9de176f309b691b4038345}{
+\index{\-Uno\-\_\-\-Game\-\_\-\-State@{\-Uno\-\_\-\-Game\-\_\-\-State}!m\-\_\-unplayed@{m\-\_\-unplayed}}
+\index{m\-\_\-unplayed@{m\-\_\-unplayed}!Uno_Game_State@{\-Uno\-\_\-\-Game\-\_\-\-State}}
+\subsubsection[{m\-\_\-unplayed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf deck} {\bf \-Uno\-\_\-\-Game\-\_\-\-State\-::m\-\_\-unplayed}}}
+\label{class_uno___game___state_a7bf61c252c9de176f309b691b4038345}
+
+
+\-The unplayed deck of cards for this game. 
+
+\-When a player draws a card it comes from the top of this deck. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__game__state_8h}{uno\-\_\-game\-\_\-state.\-h}\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__game__state_8cpp}{uno\-\_\-game\-\_\-state.\-cpp}\end{DoxyCompactItemize}

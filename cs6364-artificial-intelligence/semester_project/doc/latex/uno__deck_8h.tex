@@ -1,0 +1,209 @@
+\hypertarget{uno__deck_8h}{
+\section{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-deck.h \-File \-Reference}
+\label{uno__deck_8h}\index{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-deck.\-h@{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-deck.\-h}}
+}
+
+
+\-Contains macros and function prototypes for an \-Uno deck.  
+
+
+{\ttfamily \#include \char`\"{}uno\-\_\-card.\-h\char`\"{}}\*
+{\ttfamily \#include $<$vector$>$}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{uno__deck_8h_a35bf07672c65ab86bad484ecfa679b6a}{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}~1
+\item 
+\#define \hyperlink{uno__deck_8h_ae69cb08e55300eb6b6eac165e7110147}{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}~108
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{
+typedef vector$<$ \hyperlink{uno__card_8h_ab16a632e2e3f1f154cce75648902eb83}{card} $>$ \hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck}}
+\label{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}
+
+\begin{DoxyCompactList}\small\item\em \-Type defition for a deck of \-Uno cards. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{uno__deck_8h_a5ea49c0325ec8d63c0eace41b6bf04e4}{create\-\_\-deck} (\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&d)
+\begin{DoxyCompactList}\small\item\em \-Creates and populates a deck of \-Uno cards. \end{DoxyCompactList}\item 
+void \hyperlink{uno__deck_8h_a85619441322755c424d2d9c5d3e7f0f7}{shuffle\-\_\-deck} (\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&d)
+\begin{DoxyCompactList}\small\item\em \-Shuffles (randomly rearranges) the cards in a deck. \end{DoxyCompactList}\item 
+void \hyperlink{uno__deck_8h_a104e364e2ed706a3acdcdb99439d85fd}{swap\-\_\-decks} (\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&d, \hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&g)
+\begin{DoxyCompactList}\small\item\em \-Swaps all cards in the two decks. \end{DoxyCompactList}\item 
+void \hyperlink{uno__deck_8h_ad741fe470984f47266f2178b8fba0366}{print\-\_\-deck} (\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&d)
+\begin{DoxyCompactList}\small\item\em \-Prints out a deck of cards. \end{DoxyCompactList}\item 
+void \hyperlink{uno__deck_8h_a3549bcaaa347ac4a938c6edfb4912104}{print\-\_\-deck\-\_\-values} (\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&d)
+\begin{DoxyCompactList}\small\item\em \-Prints the values of a deck of cards. \end{DoxyCompactList}\item 
+\hyperlink{uno__card_8h_ab16a632e2e3f1f154cce75648902eb83}{card} \hyperlink{uno__deck_8h_a3f71c71338e329255eb2a52f3129ac83}{take\-\_\-card} (\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \&d)
+\begin{DoxyCompactList}\small\item\em \-Takes the top card card from the given deck. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{uno__deck_8h_a8bc5150a94703d34154c10cb797f5832}{
+const \hyperlink{uno__card_8h_ab16a632e2e3f1f154cce75648902eb83}{card} \hyperlink{uno__deck_8h_a8bc5150a94703d34154c10cb797f5832}{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-D\-E\-C\-K} \mbox{[}$\,$\mbox{]}}
+\label{uno__deck_8h_a8bc5150a94703d34154c10cb797f5832}
+
+\begin{DoxyCompactList}\small\item\em \-An array representing the regulation default \-Uno deck. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains macros and function prototypes for an \-Uno deck. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__deck_8cpp}{uno\-\_\-deck.\-cpp} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{uno__deck_8h_ae69cb08e55300eb6b6eac165e7110147}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}}
+\index{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E~108}}
+\label{uno__deck_8h_ae69cb08e55300eb6b6eac165e7110147}
+\-Standard size of an \-Uno deck. \hypertarget{uno__deck_8h_a35bf07672c65ab86bad484ecfa679b6a}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}}
+\index{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E~1}}
+\label{uno__deck_8h_a35bf07672c65ab86bad484ecfa679b6a}
+\-The number of \-Uno decks to use per game. 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{uno__deck_8h_a5ea49c0325ec8d63c0eace41b6bf04e4}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!create\-\_\-deck@{create\-\_\-deck}}
+\index{create\-\_\-deck@{create\-\_\-deck}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{create\-\_\-deck}]{\setlength{\rightskip}{0pt plus 5cm}void create\-\_\-deck (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8h_a5ea49c0325ec8d63c0eace41b6bf04e4}
+
+
+\-Creates and populates a deck of \-Uno cards. 
+
+\-Takes a deck and makes a new \-Uno deck inside of it. \begin{DoxyPrecond}{\-Precondition}
+\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E $>$ 0 
+
+\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E $>$ 0 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-A deck to store the instatiated deck in.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{\-Note}
+\-The previous deck's contents will be cleared. 
+
+\-The deck is \-N\-O\-T shuffled. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__deck_8h_a85619441322755c424d2d9c5d3e7f0f7}{shuffle\-\_\-deck( deck\& d)}
+\end{DoxySeeAlso}
+\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E directly influences the created deck. \-If this number is greater than 1, the created deck will have \-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E regulation decks worth of cards in it. \-For example, if \-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E = 2, then the created deck will have two standard decks worth of cards in it (for a total of 216 cards). \hypertarget{uno__deck_8h_ad741fe470984f47266f2178b8fba0366}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!print\-\_\-deck@{print\-\_\-deck}}
+\index{print\-\_\-deck@{print\-\_\-deck}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{print\-\_\-deck}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-deck (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8h_ad741fe470984f47266f2178b8fba0366}
+
+
+\-Prints out a deck of cards. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-A deck to print out to the screen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{\-Note}
+\-This is a relatively expensive operation, use sparingly. 
+\end{DoxyNote}
+\hypertarget{uno__deck_8h_a3549bcaaa347ac4a938c6edfb4912104}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!print\-\_\-deck\-\_\-values@{print\-\_\-deck\-\_\-values}}
+\index{print\-\_\-deck\-\_\-values@{print\-\_\-deck\-\_\-values}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{print\-\_\-deck\-\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-deck\-\_\-values (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8h_a3549bcaaa347ac4a938c6edfb4912104}
+
+
+\-Prints the values of a deck of cards. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-A deck to print out the values of each card to the screen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{\-Note}
+\-This is less expensive than printing the names of each card, but is still relatively expenive, use sparingly. 
+\end{DoxyNote}
+\hypertarget{uno__deck_8h_a85619441322755c424d2d9c5d3e7f0f7}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!shuffle\-\_\-deck@{shuffle\-\_\-deck}}
+\index{shuffle\-\_\-deck@{shuffle\-\_\-deck}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{shuffle\-\_\-deck}]{\setlength{\rightskip}{0pt plus 5cm}void shuffle\-\_\-deck (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8h_a85619441322755c424d2d9c5d3e7f0f7}
+
+
+\-Shuffles (randomly rearranges) the cards in a deck. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-A deck to shuffle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{uno__deck_8h_a104e364e2ed706a3acdcdb99439d85fd}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!swap\-\_\-decks@{swap\-\_\-decks}}
+\index{swap\-\_\-decks@{swap\-\_\-decks}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{swap\-\_\-decks}]{\setlength{\rightskip}{0pt plus 5cm}void swap\-\_\-decks (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d, }
+\item[{{\bf deck} \&}]{g}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8h_a104e364e2ed706a3acdcdb99439d85fd}
+
+
+\-Swaps all cards in the two decks. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-One of the two decks to swap between. \\
+\hline
+{\em g} & \-The other of the two decks to swap between. \\
+\hline
+\end{DoxyParams}
+\hypertarget{uno__deck_8h_a3f71c71338e329255eb2a52f3129ac83}{
+\index{uno\-\_\-deck.\-h@{uno\-\_\-deck.\-h}!take\-\_\-card@{take\-\_\-card}}
+\index{take\-\_\-card@{take\-\_\-card}!uno_deck.h@{uno\-\_\-deck.\-h}}
+\subsubsection[{take\-\_\-card}]{\setlength{\rightskip}{0pt plus 5cm}{\bf card} take\-\_\-card (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8h_a3f71c71338e329255eb2a52f3129ac83}
+
+
+\-Takes the top card card from the given deck. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-The deck to take a card from. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \hyperlink{uno__card_8h_abbc97b38c028c37643c949a6751283b7}{\-C\-A\-R\-D(\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R},\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D)} & if there are no cards to take. \\
+\hline
+{\em \hyperlink{uno__card_8h_abbc97b38c028c37643c949a6751283b7}{\-C\-A\-R\-D()}} & \-The card taken if there is a card to take.\\
+\hline
+\end{DoxyRetVals}
+\-Taking a card removes a card from the top of the deck and thus reduces the size of the deck by one. 

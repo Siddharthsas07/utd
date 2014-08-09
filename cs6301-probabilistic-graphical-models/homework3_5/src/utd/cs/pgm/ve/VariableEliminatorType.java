@@ -1,0 +1,7 @@
+package utd.cs.pgm.ve;
+
+public enum VariableEliminatorType {
+  VE_BUCKET_ELIMINATION,
+  VE_WCUTSET_BUCKET_ELIMINATION_SM_NORMAL,
+  VE_WCUTSET_BUCKET_ELIMINATION_SM_DYNAMIC
+}

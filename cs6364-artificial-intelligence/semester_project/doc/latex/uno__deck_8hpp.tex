@@ -1,0 +1,442 @@
+\hypertarget{uno__deck_8hpp}{
+\section{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-deck.hpp \-File \-Reference}
+\label{uno__deck_8hpp}\index{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-deck.\-hpp@{\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/uno\-\_\-deck.\-hpp}}
+}
+
+
+\-Contains functionality for deck for the card game \-Uno.  
+
+
+{\ttfamily \#include $<$vector$>$}\*
+{\ttfamily \#include $<$string$>$}\*
+{\ttfamily \#include $<$iostream$>$}\*
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpurple}{purple}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{uno__deck_8hpp_af51fe8ce7846876f635815db349dac81}{\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R}~( 0 )
+\item 
+\#define \hyperlink{uno__deck_8hpp_a8db4a0e2c23ad4c8993f781a90fd8880}{\-U\-N\-O\-\_\-\-R\-E\-D}~( 1 $<$$<$ 7 )
+\item 
+\#define \hyperlink{uno__deck_8hpp_a6102cc30a024abdfcf954c61b1c3b57d}{\-U\-N\-O\-\_\-\-G\-R\-E\-E\-N}~( 1 $<$$<$ 6 )
+\item 
+\#define \hyperlink{uno__deck_8hpp_ac37a417f4388c0e820cace649c1ab73d}{\-U\-N\-O\-\_\-\-B\-L\-U\-E}~( 1 $<$$<$ 5 )
+\item 
+\#define \hyperlink{uno__deck_8hpp_a204453d216173cf34524c764c0ef2649}{\-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W}~( 1 $<$$<$ 4 )
+\item 
+\#define \hyperlink{uno__deck_8hpp_a18eebbf6e7e1674875b996f8123102f6}{\-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S}~4
+\item 
+\#define \hyperlink{uno__deck_8hpp_a3d5e93f83626a8d0a96bca87356a9687}{\-U\-N\-O\-\_\-\-Z\-E\-R\-O}~0
+\item 
+\#define \hyperlink{uno__deck_8hpp_af67c8d4563e4244f14714a5324160cf4}{\-U\-N\-O\-\_\-\-O\-N\-E}~1
+\item 
+\#define \hyperlink{uno__deck_8hpp_aa06e607c7300b1fd2fa7c835893b36ff}{\-U\-N\-O\-\_\-\-T\-W\-O}~2
+\item 
+\#define \hyperlink{uno__deck_8hpp_ab711b5e1a6c5754d3852ca928d2574e6}{\-U\-N\-O\-\_\-\-T\-H\-R\-E\-E}~3
+\item 
+\#define \hyperlink{uno__deck_8hpp_a8fab9aff33f431bd5c94d51e4795071a}{\-U\-N\-O\-\_\-\-F\-O\-U\-R}~4
+\item 
+\#define \hyperlink{uno__deck_8hpp_a52eaafde41d9cfe4ce48b6ba829da014}{\-U\-N\-O\-\_\-\-F\-I\-V\-E}~5
+\item 
+\#define \hyperlink{uno__deck_8hpp_a5e41377d0d2cd388dae31ac802a3eeb8}{\-U\-N\-O\-\_\-\-S\-I\-X}~6
+\item 
+\#define \hyperlink{uno__deck_8hpp_a5e49c4b3c6efbc04fd78b256c627fb35}{\-U\-N\-O\-\_\-\-S\-E\-V\-E\-N}~7
+\item 
+\#define \hyperlink{uno__deck_8hpp_af29f2bc888ba90c7678467d21e2bd1af}{\-U\-N\-O\-\_\-\-E\-I\-G\-H\-T}~8
+\item 
+\#define \hyperlink{uno__deck_8hpp_a0adc07bc2301141509acfee0b1c1d7cf}{\-U\-N\-O\-\_\-\-N\-I\-N\-E}~9
+\item 
+\#define \hyperlink{uno__deck_8hpp_ae3e41a5dd88c17373dfd166fbc1d8a88}{\-U\-N\-O\-\_\-\-S\-K\-I\-P}~10
+\item 
+\#define \hyperlink{uno__deck_8hpp_a2f9a83a4c24672784091c1d6b93f7ceb}{\-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E}~11
+\item 
+\#define \hyperlink{uno__deck_8hpp_af345d0d2d7724241add0283fff30de2a}{\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O}~12
+\item 
+\#define \hyperlink{uno__deck_8hpp_a7211aa9abfa66385cb44e0b1d4588f81}{\-U\-N\-O\-\_\-\-W\-I\-L\-D}~13
+\item 
+\#define \hyperlink{uno__deck_8hpp_a7ca2363e9cbe3e44d32298a16b0d5a74}{\-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R}~14
+\item 
+\#define \hyperlink{uno__deck_8hpp_a4b71116fb177e3e61828d8b2b1adf7c8}{\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}~15
+\item 
+\#define \hyperlink{uno__deck_8hpp_a35bf07672c65ab86bad484ecfa679b6a}{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}~1
+\item 
+\#define \hyperlink{uno__deck_8hpp_ae69cb08e55300eb6b6eac165e7110147}{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}~108
+\item 
+\#define \hyperlink{uno__deck_8hpp_a058c261e6049c86b46f65bced45c7077}{\-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E}~7
+\item 
+\#define \hyperlink{uno__deck_8hpp_a3694be9b6eb50020edc6c9671c4a7f83}{\-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S}~10
+\item 
+\#define \hyperlink{uno__deck_8hpp_aaf20f6cc54f5c71fb3dbc996c0ff4abf}{\-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S}~2
+\item 
+\#define \hyperlink{uno__deck_8hpp_abbc97b38c028c37643c949a6751283b7}{\-C\-A\-R\-D}(a, b)~((a)$|$(b))
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \hyperlink{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}{card}
+\begin{DoxyCompactList}\small\item\em \-Type definition for a single uno card represented by a char. \end{DoxyCompactList}\item 
+typedef vector$<$ \hyperlink{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}{card} $>$ \hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck}
+\begin{DoxyCompactList}\small\item\em \-Type defition for a deck of \-Uno cards represented by a vector$<$card$>$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{uno__deck_8hpp_a5ea49c0325ec8d63c0eace41b6bf04e4}{create\-\_\-deck} (\hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck} \&d)
+\item 
+void \hyperlink{uno__deck_8hpp_a85619441322755c424d2d9c5d3e7f0f7}{shuffle\-\_\-deck} (\hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck} \&d)
+\item 
+void \hyperlink{uno__deck_8hpp_a104e364e2ed706a3acdcdb99439d85fd}{swap\-\_\-decks} (\hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck} \&d, \hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck} \&g)
+\item 
+string \hyperlink{uno__deck_8hpp_a6fc45c14cfbf3fb7529da60c1040d915}{card\-\_\-name} (\hyperlink{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}{card} c)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \hyperlink{uno__deck_8hpp_ac25703bcb09a8d6ce87ebe1c58fa8495}{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R} \mbox{[}$\,$\mbox{]}
+\item 
+const char \hyperlink{uno__deck_8hpp_a9d6c1de497727b190f42453221b9acba}{\-U\-N\-O\-\_\-\-T\-Y\-P\-E} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains functionality for deck for the card game \-Uno. \-This file contains functions, macros, and types for creating and using a deck for a card game called \-Uno. \-The game requires matching of numeric values on cards as well as colors. \-All players draw some cards to begin and attempt to play all of their cards before other players.
+
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__deck_8cpp}{uno\-\_\-deck.\-cpp} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{uno__deck_8hpp_abbc97b38c028c37643c949a6751283b7}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-C\-A\-R\-D@{\-C\-A\-R\-D}}
+\index{\-C\-A\-R\-D@{\-C\-A\-R\-D}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-C\-A\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-C\-A\-R\-D(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~((a)$|$(b))}}
+\label{uno__deck_8hpp_abbc97b38c028c37643c949a6751283b7}
+\-Converts an \-U\-N\-O\-\_\-\-C\-O\-L\-O\-R and \-U\-N\-O\-\_\-\-T\-Y\-P\-E to a usable card. 
+\begin{DoxyParams}{\-Parameters}
+{\em a} & \-An \-U\-N\-O\-\_\-\-C\-O\-L\-O\-R. \\
+\hline
+{\em b} & \-An \-U\-N\-O\-\_\-\-T\-Y\-P\-E. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+typedef char \hyperlink{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}{card}; 
+
+\hyperlink{uno__deck_8hpp_ac25703bcb09a8d6ce87ebe1c58fa8495}{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R} 
+
+\hyperlink{uno__deck_8hpp_a9d6c1de497727b190f42453221b9acba}{\-U\-N\-O\-\_\-\-T\-Y\-P\-E}
+\end{DoxySeeAlso}
+\-Takes an \-Uno color and an uno card type and converts it to a usable card. \-For example\-:
+
+\hyperlink{uno__deck_8hpp_abbc97b38c028c37643c949a6751283b7}{\-C\-A\-R\-D( U\-N\-O\-\_\-\-R\-E\-D, U\-N\-O\-\_\-\-T\-H\-R\-E\-E )}; designates a \-Red 3 card.
+
+\hyperlink{uno__deck_8hpp_abbc97b38c028c37643c949a6751283b7}{\-C\-A\-R\-D( U\-N\-O\-\_\-\-C\-O\-L\-O\-R\mbox{[}1\mbox{]}, U\-N\-O\-\_\-\-T\-Y\-P\-E\mbox{[}\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O\mbox{]} )}; designates a green draw two. \hypertarget{uno__deck_8hpp_ac37a417f4388c0e820cace649c1ab73d}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-B\-L\-U\-E@{\-U\-N\-O\-\_\-\-B\-L\-U\-E}}
+\index{\-U\-N\-O\-\_\-\-B\-L\-U\-E@{\-U\-N\-O\-\_\-\-B\-L\-U\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-B\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-B\-L\-U\-E~( 1 $<$$<$ 5 )}}
+\label{uno__deck_8hpp_ac37a417f4388c0e820cace649c1ab73d}
+\-Blue \-Uno card value. \hypertarget{uno__deck_8hpp_ae69cb08e55300eb6b6eac165e7110147}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}}
+\index{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-D\-E\-C\-K\-\_\-\-S\-I\-Z\-E~108}}
+\label{uno__deck_8hpp_ae69cb08e55300eb6b6eac165e7110147}
+\-Standard size of an \-Uno deck. \hypertarget{uno__deck_8hpp_a35bf07672c65ab86bad484ecfa679b6a}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}}
+\index{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E@{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E~1}}
+\label{uno__deck_8hpp_a35bf07672c65ab86bad484ecfa679b6a}
+\-The number of \-Uno decks to use per game. \hypertarget{uno__deck_8hpp_af345d0d2d7724241add0283fff30de2a}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O@{\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O}}
+\index{\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O@{\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-D\-R\-A\-W\-\_\-\-T\-W\-O~12}}
+\label{uno__deck_8hpp_af345d0d2d7724241add0283fff30de2a}
+\-Uno card draw two value. \hypertarget{uno__deck_8hpp_af29f2bc888ba90c7678467d21e2bd1af}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-E\-I\-G\-H\-T@{\-U\-N\-O\-\_\-\-E\-I\-G\-H\-T}}
+\index{\-U\-N\-O\-\_\-\-E\-I\-G\-H\-T@{\-U\-N\-O\-\_\-\-E\-I\-G\-H\-T}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-E\-I\-G\-H\-T~8}}
+\label{uno__deck_8hpp_af29f2bc888ba90c7678467d21e2bd1af}
+\-Uno card 8 value. \hypertarget{uno__deck_8hpp_a52eaafde41d9cfe4ce48b6ba829da014}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-F\-I\-V\-E@{\-U\-N\-O\-\_\-\-F\-I\-V\-E}}
+\index{\-U\-N\-O\-\_\-\-F\-I\-V\-E@{\-U\-N\-O\-\_\-\-F\-I\-V\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-F\-I\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-F\-I\-V\-E~5}}
+\label{uno__deck_8hpp_a52eaafde41d9cfe4ce48b6ba829da014}
+\-Uno card 5 value. \hypertarget{uno__deck_8hpp_a8fab9aff33f431bd5c94d51e4795071a}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-F\-O\-U\-R@{\-U\-N\-O\-\_\-\-F\-O\-U\-R}}
+\index{\-U\-N\-O\-\_\-\-F\-O\-U\-R@{\-U\-N\-O\-\_\-\-F\-O\-U\-R}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-F\-O\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-F\-O\-U\-R~4}}
+\label{uno__deck_8hpp_a8fab9aff33f431bd5c94d51e4795071a}
+\-Uno card 4 value. \hypertarget{uno__deck_8hpp_a6102cc30a024abdfcf954c61b1c3b57d}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-G\-R\-E\-E\-N@{\-U\-N\-O\-\_\-\-G\-R\-E\-E\-N}}
+\index{\-U\-N\-O\-\_\-\-G\-R\-E\-E\-N@{\-U\-N\-O\-\_\-\-G\-R\-E\-E\-N}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-G\-R\-E\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-G\-R\-E\-E\-N~( 1 $<$$<$ 6 )}}
+\label{uno__deck_8hpp_a6102cc30a024abdfcf954c61b1c3b57d}
+\-Green \-Uno card value. \hypertarget{uno__deck_8hpp_a058c261e6049c86b46f65bced45c7077}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E@{\-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E}}
+\index{\-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E@{\-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-I\-N\-I\-T\-\_\-\-H\-A\-N\-D\-\_\-\-S\-I\-Z\-E~7}}
+\label{uno__deck_8hpp_a058c261e6049c86b46f65bced45c7077}
+\-Initial hand size for an \-Uno hand. \hypertarget{uno__deck_8hpp_a3694be9b6eb50020edc6c9671c4a7f83}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S@{\-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S}}
+\index{\-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S@{\-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-M\-A\-X\-\_\-\-P\-L\-A\-Y\-E\-R\-S~10}}
+\label{uno__deck_8hpp_a3694be9b6eb50020edc6c9671c4a7f83}
+\-Maximum number of players for an \-Uno game. \hypertarget{uno__deck_8hpp_aaf20f6cc54f5c71fb3dbc996c0ff4abf}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S@{\-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S}}
+\index{\-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S@{\-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-M\-I\-N\-\_\-\-P\-L\-A\-Y\-E\-R\-S~2}}
+\label{uno__deck_8hpp_aaf20f6cc54f5c71fb3dbc996c0ff4abf}
+\-Minimum number of players for an \-Uno game. \hypertarget{uno__deck_8hpp_a0adc07bc2301141509acfee0b1c1d7cf}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-N\-I\-N\-E@{\-U\-N\-O\-\_\-\-N\-I\-N\-E}}
+\index{\-U\-N\-O\-\_\-\-N\-I\-N\-E@{\-U\-N\-O\-\_\-\-N\-I\-N\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-N\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-N\-I\-N\-E~9}}
+\label{uno__deck_8hpp_a0adc07bc2301141509acfee0b1c1d7cf}
+\-Uno card 9 value. \hypertarget{uno__deck_8hpp_af51fe8ce7846876f635815db349dac81}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R@{\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R}}
+\index{\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R@{\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-N\-O\-\_\-\-C\-O\-L\-O\-R~( 0 )}}
+\label{uno__deck_8hpp_af51fe8ce7846876f635815db349dac81}
+\-Each \-Uno card (excluding the \-Wild cards) has one of four colors\-: \-Red, \-Green, \-Blue, or \-Yellow. \-These colors are represented by these definitions. \-No color \-Uno card value. \hypertarget{uno__deck_8hpp_a18eebbf6e7e1674875b996f8123102f6}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S@{\-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S}}
+\index{\-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S@{\-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-N\-U\-M\-\_\-\-C\-O\-L\-O\-R\-S~4}}
+\label{uno__deck_8hpp_a18eebbf6e7e1674875b996f8123102f6}
+\-Number of colors of \-Uno cards. \hypertarget{uno__deck_8hpp_af67c8d4563e4244f14714a5324160cf4}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-O\-N\-E@{\-U\-N\-O\-\_\-\-O\-N\-E}}
+\index{\-U\-N\-O\-\_\-\-O\-N\-E@{\-U\-N\-O\-\_\-\-O\-N\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-O\-N\-E~1}}
+\label{uno__deck_8hpp_af67c8d4563e4244f14714a5324160cf4}
+\-Uno card 1 value. \hypertarget{uno__deck_8hpp_a8db4a0e2c23ad4c8993f781a90fd8880}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-R\-E\-D@{\-U\-N\-O\-\_\-\-R\-E\-D}}
+\index{\-U\-N\-O\-\_\-\-R\-E\-D@{\-U\-N\-O\-\_\-\-R\-E\-D}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-R\-E\-D~( 1 $<$$<$ 7 )}}
+\label{uno__deck_8hpp_a8db4a0e2c23ad4c8993f781a90fd8880}
+\-Red \-Uno card value. \hypertarget{uno__deck_8hpp_a4b71116fb177e3e61828d8b2b1adf7c8}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}}
+\index{\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D@{\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-R\-E\-S\-E\-R\-V\-E\-D~15}}
+\label{uno__deck_8hpp_a4b71116fb177e3e61828d8b2b1adf7c8}
+\-Uno card reserved value. \hypertarget{uno__deck_8hpp_a2f9a83a4c24672784091c1d6b93f7ceb}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E@{\-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E}}
+\index{\-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E@{\-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-R\-E\-V\-E\-R\-S\-E~11}}
+\label{uno__deck_8hpp_a2f9a83a4c24672784091c1d6b93f7ceb}
+\-Uno card reverse value. \hypertarget{uno__deck_8hpp_a5e49c4b3c6efbc04fd78b256c627fb35}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-S\-E\-V\-E\-N@{\-U\-N\-O\-\_\-\-S\-E\-V\-E\-N}}
+\index{\-U\-N\-O\-\_\-\-S\-E\-V\-E\-N@{\-U\-N\-O\-\_\-\-S\-E\-V\-E\-N}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-S\-E\-V\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-S\-E\-V\-E\-N~7}}
+\label{uno__deck_8hpp_a5e49c4b3c6efbc04fd78b256c627fb35}
+\-Uno card 7 value. \hypertarget{uno__deck_8hpp_a5e41377d0d2cd388dae31ac802a3eeb8}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-S\-I\-X@{\-U\-N\-O\-\_\-\-S\-I\-X}}
+\index{\-U\-N\-O\-\_\-\-S\-I\-X@{\-U\-N\-O\-\_\-\-S\-I\-X}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-S\-I\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-S\-I\-X~6}}
+\label{uno__deck_8hpp_a5e41377d0d2cd388dae31ac802a3eeb8}
+\-Uno card 6 value. \hypertarget{uno__deck_8hpp_ae3e41a5dd88c17373dfd166fbc1d8a88}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-S\-K\-I\-P@{\-U\-N\-O\-\_\-\-S\-K\-I\-P}}
+\index{\-U\-N\-O\-\_\-\-S\-K\-I\-P@{\-U\-N\-O\-\_\-\-S\-K\-I\-P}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-S\-K\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-S\-K\-I\-P~10}}
+\label{uno__deck_8hpp_ae3e41a5dd88c17373dfd166fbc1d8a88}
+\-Uno card skip value. \hypertarget{uno__deck_8hpp_ab711b5e1a6c5754d3852ca928d2574e6}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-T\-H\-R\-E\-E@{\-U\-N\-O\-\_\-\-T\-H\-R\-E\-E}}
+\index{\-U\-N\-O\-\_\-\-T\-H\-R\-E\-E@{\-U\-N\-O\-\_\-\-T\-H\-R\-E\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-T\-H\-R\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-T\-H\-R\-E\-E~3}}
+\label{uno__deck_8hpp_ab711b5e1a6c5754d3852ca928d2574e6}
+\-Uno card 3 value. \hypertarget{uno__deck_8hpp_aa06e607c7300b1fd2fa7c835893b36ff}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-T\-W\-O@{\-U\-N\-O\-\_\-\-T\-W\-O}}
+\index{\-U\-N\-O\-\_\-\-T\-W\-O@{\-U\-N\-O\-\_\-\-T\-W\-O}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-T\-W\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-T\-W\-O~2}}
+\label{uno__deck_8hpp_aa06e607c7300b1fd2fa7c835893b36ff}
+\-Uno card 2 value. \hypertarget{uno__deck_8hpp_a7211aa9abfa66385cb44e0b1d4588f81}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-W\-I\-L\-D@{\-U\-N\-O\-\_\-\-W\-I\-L\-D}}
+\index{\-U\-N\-O\-\_\-\-W\-I\-L\-D@{\-U\-N\-O\-\_\-\-W\-I\-L\-D}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-W\-I\-L\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-W\-I\-L\-D~13}}
+\label{uno__deck_8hpp_a7211aa9abfa66385cb44e0b1d4588f81}
+\-Uno card wild value. \hypertarget{uno__deck_8hpp_a7ca2363e9cbe3e44d32298a16b0d5a74}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R@{\-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R}}
+\index{\-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R@{\-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-W\-I\-L\-D\-\_\-\-D\-R\-A\-W\-\_\-\-F\-O\-U\-R~14}}
+\label{uno__deck_8hpp_a7ca2363e9cbe3e44d32298a16b0d5a74}
+\-Uno card wild draw four value. \hypertarget{uno__deck_8hpp_a204453d216173cf34524c764c0ef2649}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W@{\-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W}}
+\index{\-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W@{\-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-Y\-E\-L\-L\-O\-W~( 1 $<$$<$ 4 )}}
+\label{uno__deck_8hpp_a204453d216173cf34524c764c0ef2649}
+\-Yellow \-Uno card value. \hypertarget{uno__deck_8hpp_a3d5e93f83626a8d0a96bca87356a9687}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-Z\-E\-R\-O@{\-U\-N\-O\-\_\-\-Z\-E\-R\-O}}
+\index{\-U\-N\-O\-\_\-\-Z\-E\-R\-O@{\-U\-N\-O\-\_\-\-Z\-E\-R\-O}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-Z\-E\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-U\-N\-O\-\_\-\-Z\-E\-R\-O~0}}
+\label{uno__deck_8hpp_a3d5e93f83626a8d0a96bca87356a9687}
+\-Each \-Uno card has a face value, called a card type. \-These card values are represented with these definitions. \-Uno card 0 value. 
+
+\subsection{\-Typedef \-Documentation}
+\hypertarget{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!card@{card}}
+\index{card@{card}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{card}]{\setlength{\rightskip}{0pt plus 5cm}typedef char {\bf card}}}
+\label{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}
+
+
+\-Type definition for a single uno card represented by a char. 
+
+\-The \-Uno card is equivalent to a char type. \-A card's construction utilizes the bits of a char rather than its decimal value. \-The construction looks like this\-:
+
+76543210
+
+\-R\-G\-B\-Y\-V\-V\-V\-V
+
+\-The \-R bit is 1 if the card is red. \-The \-G bit is 1 if the card is green. \-The \-B bit is 1 if the card is blue. \-The \-Y bit is 1 if the card is yellow. \-You may use more than one color, but it is not regulation. \-The right-\/most 4 bits are reserved for the card's face value. \-So if the card is a \char`\"{}red 8\char`\"{} card, its construction is 10001000. \-A \char`\"{}yellow draw two\char`\"{} is 00011100. \-Wild and \-Wild \-Draw \-Four cards have no color. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__deck_8hpp_ac25703bcb09a8d6ce87ebe1c58fa8495}{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R} 
+
+\hyperlink{uno__deck_8hpp_a9d6c1de497727b190f42453221b9acba}{\-U\-N\-O\-\_\-\-T\-Y\-P\-E} 
+\end{DoxySeeAlso}
+\hypertarget{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!deck@{deck}}
+\index{deck@{deck}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{deck}]{\setlength{\rightskip}{0pt plus 5cm}typedef vector$<$ {\bf card} $>$ {\bf deck}}}
+\label{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}
+
+
+\-Type defition for a deck of \-Uno cards represented by a vector$<$card$>$. 
+
+\-The \-Uno deck is vector of \-Uno cards. \-The deck has functionality modeling use of a real \-Uno deck. \-See the other functions for details. 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{uno__deck_8hpp_a6fc45c14cfbf3fb7529da60c1040d915}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!card\-\_\-name@{card\-\_\-name}}
+\index{card\-\_\-name@{card\-\_\-name}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{card\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string card\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{{\bf card}}]{c}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8hpp_a6fc45c14cfbf3fb7529da60c1040d915}
+\-Creates a user-\/readable name for a card. 
+\begin{DoxyParams}{\-Parameters}
+{\em c} & \-The card to create the name for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+typedef char \hyperlink{uno__deck_8hpp_a5bad79215bc025f049c756e94bd83b09}{card}
+\end{DoxySeeAlso}
+\begin{DoxyNote}{\-Note}
+\-This is a relatively expensive operation, use sparingly. 
+\end{DoxyNote}
+\hypertarget{uno__deck_8hpp_a5ea49c0325ec8d63c0eace41b6bf04e4}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!create\-\_\-deck@{create\-\_\-deck}}
+\index{create\-\_\-deck@{create\-\_\-deck}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{create\-\_\-deck}]{\setlength{\rightskip}{0pt plus 5cm}void create\-\_\-deck (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8hpp_a5ea49c0325ec8d63c0eace41b6bf04e4}
+\-Creates a deck of \-Uno cards.
+
+\-Takes a deck (or a vector$<$card$>$) and makes a new \-Uno deck inside of it. 
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-A deck to store the instatiated deck in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+typedef vector$<$card$>$ \hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck}
+\end{DoxySeeAlso}
+\begin{DoxyNote}{\-Note}
+\-The previous deck's contents will be cleared. 
+
+\-The deck is \-N\-O\-T shuffled. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__deck_8hpp_a85619441322755c424d2d9c5d3e7f0f7}{shuffle\-\_\-deck( deck\& d)}
+\end{DoxySeeAlso}
+\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E directly influences the created deck. \-If this number is greater than 1, the created deck will have \-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E standard decks worth of cards in it. \-For example, if \-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E = 2, then the created deck will have two standard decks worth of cards in it (for a total of 216 cards). \begin{DoxySeeAlso}{\-See also}
+\hyperlink{uno__deck_8hpp_a35bf07672c65ab86bad484ecfa679b6a}{\-U\-N\-O\-\_\-\-D\-E\-C\-K\-S\-\_\-\-P\-E\-R\-\_\-\-G\-A\-M\-E} 
+\end{DoxySeeAlso}
+\hypertarget{uno__deck_8hpp_a85619441322755c424d2d9c5d3e7f0f7}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!shuffle\-\_\-deck@{shuffle\-\_\-deck}}
+\index{shuffle\-\_\-deck@{shuffle\-\_\-deck}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{shuffle\-\_\-deck}]{\setlength{\rightskip}{0pt plus 5cm}void shuffle\-\_\-deck (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8hpp_a85619441322755c424d2d9c5d3e7f0f7}
+\-Shuffles a deck of \-Uno cards.
+
+\-Takes a deck (or a vector$<$card$>$) and shuffles (randomly rearranges) the cards in it. 
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-A deck to shuffle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+typedef vector$<$card$>$ \hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck} 
+\end{DoxySeeAlso}
+\hypertarget{uno__deck_8hpp_a104e364e2ed706a3acdcdb99439d85fd}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!swap\-\_\-decks@{swap\-\_\-decks}}
+\index{swap\-\_\-decks@{swap\-\_\-decks}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{swap\-\_\-decks}]{\setlength{\rightskip}{0pt plus 5cm}void swap\-\_\-decks (
+\begin{DoxyParamCaption}
+\item[{{\bf deck} \&}]{d, }
+\item[{{\bf deck} \&}]{g}
+\end{DoxyParamCaption}
+)}}
+\label{uno__deck_8hpp_a104e364e2ed706a3acdcdb99439d85fd}
+\-Swaps all cards in the two decks. 
+\begin{DoxyParams}{\-Parameters}
+{\em d} & \-One of the two decks to swap between. \\
+\hline
+{\em g} & \-The other of the two decks to swap between. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+typedef vector$<$card$>$ \hyperlink{uno__deck_8hpp_a85b98ba6327a2876f1d5222a93ce22a0}{deck} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{uno__deck_8hpp_ac25703bcb09a8d6ce87ebe1c58fa8495}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R@{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R}}
+\index{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R@{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-C\-O\-L\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}const char {\bf \-U\-N\-O\-\_\-\-C\-O\-L\-O\-R}\mbox{[}$\,$\mbox{]}}}
+\label{uno__deck_8hpp_ac25703bcb09a8d6ce87ebe1c58fa8495}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ {
+  UNO_RED,
+  UNO_GREEN,
+  UNO_BLUE,
+  UNO_YELLOW
+}
+\end{DoxyCode}
+\-An array of \-U\-N\-O\-\_\-\-C\-O\-L\-O\-R available for use in the game \hypertarget{uno__deck_8hpp_a9d6c1de497727b190f42453221b9acba}{
+\index{uno\-\_\-deck.\-hpp@{uno\-\_\-deck.\-hpp}!\-U\-N\-O\-\_\-\-T\-Y\-P\-E@{\-U\-N\-O\-\_\-\-T\-Y\-P\-E}}
+\index{\-U\-N\-O\-\_\-\-T\-Y\-P\-E@{\-U\-N\-O\-\_\-\-T\-Y\-P\-E}!uno_deck.hpp@{uno\-\_\-deck.\-hpp}}
+\subsubsection[{\-U\-N\-O\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}const char {\bf \-U\-N\-O\-\_\-\-T\-Y\-P\-E}\mbox{[}$\,$\mbox{]}}}
+\label{uno__deck_8hpp_a9d6c1de497727b190f42453221b9acba}
+{\bfseries \-Initial value\-:}
+\begin{DoxyCode}
+ {
+  UNO_ZERO,
+  UNO_ONE,
+  UNO_TWO,
+  UNO_THREE,
+  UNO_FOUR,
+  UNO_FIVE,
+  UNO_SIX,
+  UNO_SEVEN,
+  UNO_EIGHT,
+  UNO_NINE,
+  UNO_SKIP,
+  UNO_REVERSE,
+  UNO_DRAW_TWO,
+  UNO_WILD,
+  UNO_WILD_DRAW_FOUR
+}
+\end{DoxyCode}
+\-An array of \-U\-N\-O\-\_\-\-T\-Y\-P\-E available for use in the game 

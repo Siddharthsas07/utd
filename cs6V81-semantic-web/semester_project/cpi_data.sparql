@@ -1,0 +1,8 @@
+PREFIX dgv316: <http://data-gov.tw.rpi.edu/vocab/p/316/> 
+SELECT DISTINCT ?y ?m ?v 
+WHERE { 
+  ?s dgv316:series_id [CPI_seriesID] . 
+  ?s dgv316:year ?y . 
+  ?s dgv316:period ?m . 
+  ?s dgv316:value ?v .
+}

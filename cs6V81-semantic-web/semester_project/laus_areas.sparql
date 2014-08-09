@@ -1,0 +1,26 @@
+PREFIX dgv316: <http://data-gov.tw.rpi.edu/vocab/p/316/>
+SELECT DISTINCT ?z ?y ?x
+WHERE {
+  GRAPH <http://data-gov.tw.rpi.edu/vocab/Dataset_330> {
+    {
+      ?s dgv316:area_type_code "A" .
+      ?s dgv316:area_type_code ?z .
+      ?s dgv316:area_code ?y .
+      ?s dgv316:area_name ?x .
+    }
+    UNION
+    {
+      ?s dgv316:area_type_code "B" .
+      ?s dgv316:area_type_code ?z .
+      ?s dgv316:area_code ?y .
+      ?s dgv316:area_name ?x .
+    }
+    UNION
+    {
+      ?s dgv316:area_type_code "E" .
+      ?s dgv316:area_type_code ?z .
+      ?s dgv316:area_code ?y .
+      ?s dgv316:area_name ?x .
+    }
+  } 
+} ORDER BY ASC(?x)

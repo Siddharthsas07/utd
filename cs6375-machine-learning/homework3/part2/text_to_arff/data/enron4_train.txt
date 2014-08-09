@@ -1,0 +1,4 @@
+-1
+enron4/train/ham/
+1
+enron4/train/spam/

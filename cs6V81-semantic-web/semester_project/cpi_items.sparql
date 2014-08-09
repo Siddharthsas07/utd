@@ -1,0 +1,9 @@
+PREFIX dgv316: <http://data-gov.tw.rpi.edu/vocab/p/316/>
+SELECT DISTINCT ?x ?y
+WHERE {
+  GRAPH <http://data-gov.tw.rpi.edu/vocab/Dataset_320> {
+    ?s dgv316:item_name ?y . 
+    ?s dgv316:item_code ?x . 
+  }
+}
+ORDER BY ASC(?y)

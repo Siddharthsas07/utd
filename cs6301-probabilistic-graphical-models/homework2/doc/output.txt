@@ -1,0 +1,46 @@
+C:\Users\Gary\Documents\my-random-cpp-libraries\projects\graduate\cs6301-probabilistic-graphical-models
+File read: 0.040417663
+Instantiated evidence: 2.2859E-5
+Width of Min-Degree order: 3
+Eliminating bucket: 0
+Returning created tuple v: [3] 0 1 3 
+a: [3] 0 0 0 
+d: [3] 2 2 2 
+
+Returning created index 0
+Returning created index 0
+Returning created index 0
+Returning created tuple v: [3] 0 1 3 
+a: [3] 0 0 1 
+d: [3] 2 2 2 
+
+Returning created index 0
+Returning created index 1
+Returning created index 0
+Returning created tuple v: [3] 0 1 3 
+a: [3] 0 1 0 
+d: [3] 2 2 2 
+
+Returning created index 1
+Returning created index 2
+Returning created index 1
+Returning created tuple v: [3] 0 1 3 
+a: [3] 0 1 1 
+d: [3] 2 2 2 
+
+Returning created index 1
+Returning created index 3
+Returning created index 1
+Returning created tuple v: [3] 0 1 3 
+a: [3] 1 0 0 
+d: [3] 2 2 2 
+
+Returning created index 2
+java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at pgm.FunctionTable.product(FunctionTable.java:167)
+	at pgm.FunctionTable.productSumOut(FunctionTable.java:282)
+	at pgm.GraphModel.doBucketElimination(GraphModel.java:319)
+	at pgm.GraphModel.computeParitionFunctionGivenEvidence(GraphModel.java:236)
+	at pgm.Main.main(Main.java:57)

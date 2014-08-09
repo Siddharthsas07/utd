@@ -1,0 +1,139 @@
+\hypertarget{class_uno___player}{
+\section{\-Uno\-\_\-\-Player \-Class \-Reference}
+\label{class_uno___player}\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}}
+}
+
+
+\-Base \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player} class.  
+
+
+
+
+{\ttfamily \#include $<$uno\-\_\-player.\-h$>$}
+
+\-Inheritance diagram for \-Uno\-\_\-\-Player\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_uno___player}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_uno___player_a0447ff92b80be8d98d0052d7d2a868d7}{\-Uno\-\_\-\-Player} ()
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_uno___player_a01b27e59f1de1e13627c2e72e69c65c6}{\-Uno\-\_\-\-Player} (const string \&n, unsigned int s)
+\begin{DoxyCompactList}\small\item\em \-Full value specification constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_uno___action}{\-Uno\-\_\-\-Action} \hyperlink{class_uno___player_aa6e4a3177c39ee2572250b2dd4400a43}{take\-\_\-turn} (const \hyperlink{class_uno___p_state}{\-Uno\-\_\-\-P\-State} \&s)
+\begin{DoxyCompactList}\small\item\em \-Calls the player to take his turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_uno___player_a06af109b4d621efa14ba98e4c9395739}{m\-\_\-name}
+\begin{DoxyCompactList}\small\item\em \-The player's name. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_uno___player_a9805f306a500b1898c0a0922d76de444}{m\-\_\-score}
+\begin{DoxyCompactList}\small\item\em \-The player's score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Base \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player} class. 
+
+\-This class does nothing, use an \hyperlink{class_uno___a_i___player}{\-Uno\-\_\-\-A\-I\-\_\-\-Player} or an \hyperlink{class_uno___human___player}{\-Uno\-\_\-\-Human\-\_\-\-Player} instead. \begin{DoxySeeAlso}{\-See also}
+\hyperlink{class_uno___a_i___player}{\-Uno\-\_\-\-A\-I\-\_\-\-Player} 
+
+\hyperlink{class_uno___human___player}{\-Uno\-\_\-\-Human\-\_\-\-Player} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_uno___player_a0447ff92b80be8d98d0052d7d2a868d7}{
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}}
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!Uno_Player@{\-Uno\-\_\-\-Player}}
+\subsubsection[{\-Uno\-\_\-\-Player}]{\setlength{\rightskip}{0pt plus 5cm}\-Uno\-\_\-\-Player\-::\-Uno\-\_\-\-Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_uno___player_a0447ff92b80be8d98d0052d7d2a868d7}
+
+
+\-Default constructor. 
+
+\-Constructs an \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player} with empty and zero values. \hypertarget{class_uno___player_a01b27e59f1de1e13627c2e72e69c65c6}{
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}}
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!Uno_Player@{\-Uno\-\_\-\-Player}}
+\subsubsection[{\-Uno\-\_\-\-Player}]{\setlength{\rightskip}{0pt plus 5cm}\-Uno\-\_\-\-Player\-::\-Uno\-\_\-\-Player (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{n, }
+\item[{unsigned int}]{s}
+\end{DoxyParamCaption}
+)}}
+\label{class_uno___player_a01b27e59f1de1e13627c2e72e69c65c6}
+
+
+\-Full value specification constructor. 
+
+\-Constructs an \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player} with the given values. 
+\begin{DoxyParams}{\-Parameters}
+{\em n} & \-The name of the \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player}. \\
+\hline
+{\em s} & \-The score for the \hyperlink{class_uno___player}{\-Uno\-\_\-\-Player}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_uno___player_aa6e4a3177c39ee2572250b2dd4400a43}{
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!take\-\_\-turn@{take\-\_\-turn}}
+\index{take\-\_\-turn@{take\-\_\-turn}!Uno_Player@{\-Uno\-\_\-\-Player}}
+\subsubsection[{take\-\_\-turn}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Uno\-\_\-\-Action} \-Uno\-\_\-\-Player\-::take\-\_\-turn (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Uno\-\_\-\-P\-State} \&}]{s}
+\end{DoxyParamCaption}
+)}}
+\label{class_uno___player_aa6e4a3177c39ee2572250b2dd4400a43}
+
+
+\-Calls the player to take his turn. 
+
+\-This function is invoked by the \hyperlink{class_uno___runner}{\-Uno\-\_\-\-Runner} whenever it is this player's turn in the game. 
+\begin{DoxyParams}{\-Parameters}
+{\em s} & \-The state of the game as visible from this player's perspective. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \hyperlink{class_uno___action}{\-Uno\-\_\-\-Action}} & \-The \hyperlink{class_uno___action}{\-Uno\-\_\-\-Action} the player chooses this turn. \\
+\hline
+\end{DoxyRetVals}
+
+
+\-Reimplemented in \hyperlink{class_uno___a_i___player_a46dd95e2b2ff44fa0b5cc80fb1d66605}{\-Uno\-\_\-\-A\-I\-\_\-\-Player}, and \hyperlink{class_uno___human___player_a14a73bddb4791cc7406a0e9cfe65979b}{\-Uno\-\_\-\-Human\-\_\-\-Player}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_uno___player_a06af109b4d621efa14ba98e4c9395739}{
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!m\-\_\-name@{m\-\_\-name}}
+\index{m\-\_\-name@{m\-\_\-name}!Uno_Player@{\-Uno\-\_\-\-Player}}
+\subsubsection[{m\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Uno\-\_\-\-Player\-::m\-\_\-name}}}
+\label{class_uno___player_a06af109b4d621efa14ba98e4c9395739}
+
+
+\-The player's name. 
+
+\-A string representing the player's name. \-This can be just about anything you want it to be. \hypertarget{class_uno___player_a9805f306a500b1898c0a0922d76de444}{
+\index{\-Uno\-\_\-\-Player@{\-Uno\-\_\-\-Player}!m\-\_\-score@{m\-\_\-score}}
+\index{m\-\_\-score@{m\-\_\-score}!Uno_Player@{\-Uno\-\_\-\-Player}}
+\subsubsection[{m\-\_\-score}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Uno\-\_\-\-Player\-::m\-\_\-score}}}
+\label{class_uno___player_a9805f306a500b1898c0a0922d76de444}
+
+
+\-The player's score. 
+
+\-Each player attains a number of points at the end of each game. \-The point total for a player is tracked using this. \-The first player to reach 500 points in a regulation game is considered the winner. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__player_8h}{uno\-\_\-player.\-h}\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__player_8cpp}{uno\-\_\-player.\-cpp}\end{DoxyCompactItemize}

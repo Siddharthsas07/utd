@@ -1,0 +1,23 @@
+# pobtools project
+pobtools.version=4
+target.name=./assignment3.hex
+sources.number=15
+sources.0=./assignment3.c
+sources.1=./bitmap.h
+sources.2=./pattern.h
+sources.3=./joystick.c
+sources.4=./joystick.h
+sources.5=./dodrio.h
+sources.6=./dodrio.c
+sources.7=./scheduler.c
+sources.8=./scheduler.h
+sources.9=./tasks.c
+sources.10=./tasks.h
+sources.11=./cqueue.h
+sources.12=./cqueue.c
+sources.13=./pattern.c
+sources.14=./bitmap.c
+bmps.number=0
+patterns.number=0
+sdk=pobeye2
+lang=C

@@ -1,0 +1,43 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:utd="http://utdallas/semclass#"
+    xmlns:movie="http://utdallas/semclass/movie#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:person="http://utdallas/semclass/person#"
+    xmlns:book="http://utdallas/semclass/book#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://utdallas/semclass/movie#drStrangelove">
+    <movie:genre>Comedy, Drama</movie:genre>
+    <movie:originalWork rdf:resource="http://utdallas/semclass/book#redAlert"/>
+    <rdf:type rdf:resource="http://utdallas/semclass/movie#"/>
+    <dc:title>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb</dc:title>
+    <dc:date>1964</dc:date>
+    <movie:director rdf:resource="http://utdallas/semclass/person#StanleyKubrick"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://utdallas/semclass/book#redAlert">
+    <rdf:type rdf:resource="http://utdallas/semclass/book#"/>
+    <dc:title>Red Alert</dc:title>
+    <dc:date>1958</dc:date>
+    <dc:creator rdf:resource="http://utdallas/semclass/person#peterGeorge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://utdallas/semclass/person#StanleyKubrick">
+    <rdf:type rdf:resource="http://utdallas/semclass/person#"/>
+    <vcard:Given>Stanley</vcard:Given>
+    <vcard:Family>Kubrick</vcard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://utdallas/semclass/movie#clockworkOrange">
+    <movie:genre>Crime, Drama, Sci-Fi</movie:genre>
+    <movie:originalWork rdf:resource="http://utdallas/semclass/book#redAlert"/>
+    <rdf:type rdf:resource="http://utdallas/semclass/movie#"/>
+    <dc:title>A Clockwork Orange</dc:title>
+    <dc:date>1971</dc:date>
+    <movie:director rdf:resource="http://utdallas/semclass/person#StanleyKubrick"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://utdallas/semclass/person#peterGeorge">
+    <rdf:type rdf:resource="http://utdallas/semclass/person#"/>
+    <vcard:Given>Peter</vcard:Given>
+    <vcard:Family>George</vcard:Family>
+  </rdf:Description>
+</rdf:RDF>

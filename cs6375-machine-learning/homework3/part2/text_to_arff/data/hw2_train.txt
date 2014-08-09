@@ -1,0 +1,4 @@
+-1
+hw2/train/ham/
+1
+hw2/train/spam/

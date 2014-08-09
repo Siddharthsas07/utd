@@ -1,0 +1,18 @@
+Q: Does the accuracy improve (by using stop words)? Why, why not?
+A: For Naive Bayes when using a larger set of tokens to delimit the input files
+   the accuracy increased by using stop words. When using only \n and space to
+   delimit the input files, the accuracy decreased using stop words. Either way
+   the accuracy for classificaiton did not change significantly. Additionally
+   using stop words resulted in remarkably higher running times. It seems that
+   the extra running time for the small increase in accuracy isn't really worth
+   it.
+   
+   For Logistic Regression use of stop words resulted generally in lower 
+   accuracy in. Changing the delimiters didn't seem to cause any significant
+   change in accuracy. Changing the iterations from 50 to 100 for the gradient
+   ascent resulted in almost no change in the accuracy. 
+   
+   For both NB and LR, use of stop words resulted in lower accuracy. This can be
+   attributed to the following:
+   1) Spam messages did not contain many of the stop words, but ham messages did
+      and thus less words were kept as criteria to classify ham messages correctly.

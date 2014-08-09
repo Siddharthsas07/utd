@@ -1,0 +1,376 @@
+SQL> @hw_steelman.sql
+DROP TABLE DEPENDENT CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE EMPLOYEE CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE DEPT_LOCATIONS CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE PROJECT CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE WORKS_ON CASCADE CONSTRAINTS
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+Table created.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+DNAME              DNUMBER MGRSSN    MGRSTARTD                                  
+--------------- ---------- --------- ---------                                  
+Research                 5 333445555 22-MAY-88                                  
+Administration           4 987654321 01-JAN-95                                  
+Headquarters             1 888665555 19-JUN-81                                  
+
+
+FNAME           M LNAME           SSN       BDATE                               
+--------------- - --------------- --------- ---------                           
+ADDRESS                        S     SALARY SUPERSSN         DNO                
+------------------------------ - ---------- --------- ----------                
+John            B Smith           123456789 09-JAN-65                           
+731 Fondren, Houston, TX       M      30000 333445555          5                
+                                                                                
+Franklin        T Wong            333445555 08-DEC-65                           
+638 Voss, Houston, TX          M      40000 888665555          5                
+                                                                                
+Alicia          J Zelaya          999887777 19-JAN-65                           
+3321 Castle, Spring, TX        F      25000 987654321          4                
+                                                                                
+
+FNAME           M LNAME           SSN       BDATE                               
+--------------- - --------------- --------- ---------                           
+ADDRESS                        S     SALARY SUPERSSN         DNO                
+------------------------------ - ---------- --------- ----------                
+Jennifer        S Wallace         987654321 20-JUN-65                           
+291 Berry, Bellaire, TX        F      43000 888665555          4                
+                                                                                
+Ramesh          K Narayan         666884444 15-SEP-65                           
+975 Fire Oak, Humble, TX       M      38000 333445555          5                
+                                                                                
+Joyce           A English         453453453 31-JUL-65                           
+5631 Rice, Houston, TX         F      25000 333445555          5                
+                                                                                
+
+FNAME           M LNAME           SSN       BDATE                               
+--------------- - --------------- --------- ---------                           
+ADDRESS                        S     SALARY SUPERSSN         DNO                
+------------------------------ - ---------- --------- ----------                
+Ahmad           V Jabbar          987987987 29-MAR-65                           
+980 Dallas, Houston, TX        M      25000 987654321          4                
+                                                                                
+James           E Borg            888665555 10-NOV-65                           
+450 Stone, Houston, TX         M      55000                    1                
+                                                                                
+
+8 rows selected.
+
+
+   DNUMBER DLOCATION                                                            
+---------- --------------------                                                 
+         1 Houston                                                              
+         4 Stafford                                                             
+         5 Bellaire                                                             
+         5 Houston                                                              
+         5 Sugarland                                                            
+
+
+PNAME                   PNUMBER PLOCATION                   DNO                 
+-------------------- ---------- -------------------- ----------                 
+ProductX                      1 Bellaire                      5                 
+ProductY                      2 Sugarland                     5                 
+ProductZ                      3 Houston                       5                 
+Computerization              10 Stafford                      5                 
+Reorganization               20 Houston                       5                 
+Newbenefits                  30 Stafford                      5                 
+
+6 rows selected.
+
+
+ESSN             PNO      HOURS                                                 
+--------- ---------- ----------                                                 
+123456789          1       32.5                                                 
+123456789          2        7.5                                                 
+666884444          3         40                                                 
+453453453          1         20                                                 
+453453453          2         20                                                 
+333445555          2         10                                                 
+333445555          3         10                                                 
+333445555         10         10                                                 
+333445555         20         10                                                 
+999887777         30         30                                                 
+999887777         10         10                                                 
+
+ESSN             PNO      HOURS                                                 
+--------- ---------- ----------                                                 
+987987987         10         35                                                 
+987987987         30          5                                                 
+987654321         30         20                                                 
+987654321         20         15                                                 
+888665555         20                                                            
+
+16 rows selected.
+
+
+ESSN      DEPENDENT_NAME       S BDATE     RELATIONSHIP                         
+--------- -------------------- - --------- --------------------                 
+333445555 Alice                F 05-APR-86 Daughter                             
+333445555 Theodore             M 25-OCT-86 Son                                  
+333445555 Joy                  F 03-MAY-86 Spouse                               
+987654321 Abner                M 28-FEB-86 Spouse                               
+123456789 Michael              M 04-JAN-86 Son                                  
+123456789 Alice                F 30-DEC-86 Daughter                             
+123456789 Elizabeth            F 05-MAY-86 Spouse                               
+
+7 rows selected.
+
+
+LNAME           FNAME                                                           
+--------------- ---------------                                                 
+Smith           John                                                            
+English         Joyce                                                           
+
+
+no rows selected
+
+
+LNAME           FNAME                                                           
+--------------- ---------------                                                 
+Smith           John                                                            
+Narayan         Ramesh                                                          
+English         Joyce                                                           
+
+
+PNAME                SUM(HOURS)                                                 
+-------------------- ----------                                                 
+Reorganization               25                                                 
+ProductY                   37.5                                                 
+ProductZ                     50                                                 
+ProductX                   52.5                                                 
+Newbenefits                  55                                                 
+Computerization              55                                                 
+
+6 rows selected.
+
+
+no rows selected
+
+
+no rows selected
+
+
+DNAME           AVG(SALARY)                                                     
+--------------- -----------                                                     
+Administration        31000                                                     
+Research              33250                                                     
+Headquarters          55000                                                     
+
+
+AVG(SALARY)                                                                     
+-----------                                                                     
+      31000                                                                     
+
+
+LNAME           FNAME           ADDRESS                                         
+--------------- --------------- ------------------------------                  
+Wallace         Jennifer        291 Berry, Bellaire, TX                         
+
+
+LNAME           FNAME                                                           
+--------------- ---------------                                                 
+Borg            James                                                           
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+SQL> spool off

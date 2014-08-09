@@ -1,0 +1,12 @@
+Refactor LogNumber:
+  Store LogType as member data to avoid messiness and inconsistencies.
+    Also find the logic error in its math.
+  Change global variables list to ArrayList<Integer> of domain size for each variable
+    isEvidence and value are gleaned from the evidence HashMap
+    ID is gleaned by its index in the list.
+    Only remaining variable is the domain size, so just make that the value at the index.
+  Speed up multiplySumOut
+    Doing a multiply then a sumOut, can combine and make faster.
+  Fix bucketElim alg to actually compute the right value
+    For a BN this means stopping early to project evidence onto the last Function.
+    For a MN this means never stopping. 

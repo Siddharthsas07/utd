@@ -1,0 +1,85 @@
+Notes:
+
+instantiation (perfactor) [DOES NOT WORK]
+(5:35:12 PM) Efsie: P = PI(scope(lesser V))
+(5:35:17 PM) Efsie: start = e*P
+(5:35:31 PM) Efsie: length = P
+(5:35:51 PM) Efsie: interval spacing = scope(V)*P
+(5:36:01 PM) eofpi: indeed
+(5:36:05 PM) Efsie: And I stop when the next interval goes off the end of the array.
+
+multiply 
+  generate helper functions:
+  1) HashMap<Long,Long> rowIndexToTuple(Function f, index i)
+  2) Long tupleToRowIndex(Function f, HashMap<Long,Long> t) 
+
+sumOut [DOES NOT WORK]
+
+multiplySumOut [DOES NOT WORK]
+
+Figure out what all this is actually meaning~
+
+INT GETINDEXFROMTUPLE(assignment a, bases b)
+RECURSIVE: 
+init:
+a = array of length N
+b = arrya of length N
+c = N-1
+
+int F(a, b, c) {
+  if c == 0
+    return a[0]
+  else 
+    return (b[c] * F(a, b, c-1)) + a[c]
+}
+
+iterative:
+init:
+a = array of length N
+b = array of length N
+value = a[0]
+
+for (c = 1; c < N; c++) {
+  value = (b[c] * val) + a[c]
+}
+
+TUPLE GETTUPLEFROMINDEX(assignment a, bases b)
+iterative:
+init:
+a = array of length N
+b = array of length N
+value = X
+
+for (c = N-1; c >= 0; c--) {
+  a[c] = value % b[c];
+  value = (value-a[c]) / b[c];
+}
+
+// now put assignments into a hashmap based on variables in this factor
+
+
+f: set of Factors, r: factor
+r.variables = getAllVariables(f)
+r.tableSize = PI(Scope(V) in F)
+r.table = 1.0 for all entries
+for (i=0; i < r.table.size; i++) {
+  tuple t = r.getTupleForIndex(i);
+  for (Factor currFactor in f) {   
+    r.table[i] *= currFactor.getValueForTuple(t)
+  }
+}
+
+todo:
+normalize tables for bn after instantiation
+  -> logsum all values in the table
+  -> convert to realspace value
+  -> do 1/ that
+  -> convert that to a logspaec value
+  -> logmultiply that against all values in table
+change bucketelim logic for bn
+logic error somewhere
+
+
+
+Future work: 
+

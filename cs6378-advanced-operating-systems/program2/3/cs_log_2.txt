@@ -1,0 +1,8 @@
+CS Entry Log for node 2
+Overall: 
+	Total wait_time = 0
+	Average wait_time = -nan
+	Total messages = 0
+	Average msg_count = -nan
+	Minimum msg_count = 4294967295
+	Maximum msg_count = 0

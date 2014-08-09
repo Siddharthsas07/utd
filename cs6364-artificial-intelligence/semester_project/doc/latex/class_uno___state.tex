@@ -1,0 +1,89 @@
+\hypertarget{class_uno___state}{
+\section{\-Uno\-\_\-\-State \-Class \-Reference}
+\label{class_uno___state}\index{\-Uno\-\_\-\-State@{\-Uno\-\_\-\-State}}
+}
+
+
+\-Contains the basic elements of a state common to the server and players.  
+
+
+
+
+{\ttfamily \#include $<$uno\-\_\-state.\-h$>$}
+
+\-Inheritance diagram for \-Uno\-\_\-\-State\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_uno___state}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_uno___state_a9c349d9df19daaee8353dde4e8b3575c}{\-Uno\-\_\-\-State} ()
+\begin{DoxyCompactList}\small\item\em \-Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_uno___state_a7c0374eff2c4a4b3eed4b7eebb72a81a}{
+unsigned int \hyperlink{class_uno___state_a7c0374eff2c4a4b3eed4b7eebb72a81a}{m\-\_\-at\-\_\-play}}
+\label{class_uno___state_a7c0374eff2c4a4b3eed4b7eebb72a81a}
+
+\begin{DoxyCompactList}\small\item\em \-The \-I\-D of the player whose turn it is. \end{DoxyCompactList}\item 
+\hypertarget{class_uno___state_adba4113bb99a08f6804eeb348ed3822c}{
+unsigned int \hyperlink{class_uno___state_adba4113bb99a08f6804eeb348ed3822c}{m\-\_\-turn\-\_\-count}}
+\label{class_uno___state_adba4113bb99a08f6804eeb348ed3822c}
+
+\begin{DoxyCompactList}\small\item\em \-The number of turns elapsed since the game began. \end{DoxyCompactList}\item 
+\hyperlink{uno__deck_8h_ab634a15f4d19d3af113a71241b79c408}{deck} \hyperlink{class_uno___state_ad46fac2ea86f2fd2249675db49c35b6c}{m\-\_\-played}
+\begin{DoxyCompactList}\small\item\em \-The played deck of cards for this game. \end{DoxyCompactList}\item 
+\hypertarget{class_uno___state_a80b2bee84fda6bdd9c37bc2309c81608}{
+double \hyperlink{class_uno___state_a80b2bee84fda6bdd9c37bc2309c81608}{m\-\_\-time\-\_\-per\-\_\-turn}}
+\label{class_uno___state_a80b2bee84fda6bdd9c37bc2309c81608}
+
+\begin{DoxyCompactList}\small\item\em \-The number of second allotted to a player to choose their move for a turn. \end{DoxyCompactList}\item 
+\hypertarget{class_uno___state_ab345f325e023d89b0c7c3f8bf3a629da}{
+string \hyperlink{class_uno___state_ab345f325e023d89b0c7c3f8bf3a629da}{m\-\_\-msg}}
+\label{class_uno___state_ab345f325e023d89b0c7c3f8bf3a629da}
+
+\begin{DoxyCompactList}\small\item\em \-A multipurpose message used by the server and the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains the basic elements of a state common to the server and players. 
+
+\-This class contains the information for\-: \begin{DoxyItemize}
+\item \-Player at play. \item \-Turn count. \item \-Played deck of cards. \item \-Time allowance per turn. \end{DoxyItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_uno___state_a9c349d9df19daaee8353dde4e8b3575c}{
+\index{\-Uno\-\_\-\-State@{\-Uno\-\_\-\-State}!\-Uno\-\_\-\-State@{\-Uno\-\_\-\-State}}
+\index{\-Uno\-\_\-\-State@{\-Uno\-\_\-\-State}!Uno_State@{\-Uno\-\_\-\-State}}
+\subsubsection[{\-Uno\-\_\-\-State}]{\setlength{\rightskip}{0pt plus 5cm}\-Uno\-\_\-\-State\-::\-Uno\-\_\-\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_uno___state_a9c349d9df19daaee8353dde4e8b3575c}
+
+
+\-Default constructor. 
+
+\-Constructs an \hyperlink{class_uno___state}{\-Uno\-\_\-\-State} with empty and zero values. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_uno___state_ad46fac2ea86f2fd2249675db49c35b6c}{
+\index{\-Uno\-\_\-\-State@{\-Uno\-\_\-\-State}!m\-\_\-played@{m\-\_\-played}}
+\index{m\-\_\-played@{m\-\_\-played}!Uno_State@{\-Uno\-\_\-\-State}}
+\subsubsection[{m\-\_\-played}]{\setlength{\rightskip}{0pt plus 5cm}{\bf deck} {\bf \-Uno\-\_\-\-State\-::m\-\_\-played}}}
+\label{class_uno___state_ad46fac2ea86f2fd2249675db49c35b6c}
+
+
+\-The played deck of cards for this game. 
+
+\-This is the face-\/up stack of cards players put cards into from their hands. 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-C\-:/\-Users/\-Gary/\-Documents/\-School/my-\/random-\/cpp-\/libraries/trunk/projects/graduate/cs6364/semester\-\_\-project/semester\-\_\-project/\hyperlink{uno__state_8h}{uno\-\_\-state.\-h}\end{DoxyCompactItemize}

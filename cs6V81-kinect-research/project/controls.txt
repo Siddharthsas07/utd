@@ -1,0 +1,11 @@
+1) plug in Kinect
+2) start application 
+3) if it errors, close it, try again
+
+4) hit N to toggle near mode on/off
+
+5) close window when finished
+
+After each frame the estimated hand pose is stored in a HandModel object.
+This object can be used for anything, but in this application I simply
+use it for rendering on top of the Kinect RGB image. 

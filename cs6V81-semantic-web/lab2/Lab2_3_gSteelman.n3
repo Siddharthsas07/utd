@@ -1,0 +1,51 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix person:  <http://utdallas/semclass/person#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix base:    <http://utdallas/semclass#> .
+@prefix book:    <http://utdallas/semclass/book#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix utd:     <http://utdallas/semclass#> .
+@prefix movie:   <http://utdallas/semclass/movie#> .
+
+movie:drStrangelove
+      a       movie: ;
+      <http://purl.org/dc/elements/1.1/date>
+              "1964" ;
+      <http://purl.org/dc/elements/1.1/title>
+              "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb" ;
+      movie:director person:StanleyKubrick ;
+      movie:genre "Comedy, Drama" ;
+      movie:originalWork book:redAlert .
+
+book:redAlert
+      a       book: ;
+      <http://purl.org/dc/elements/1.1/creator>
+              person:peterGeorge ;
+      <http://purl.org/dc/elements/1.1/date>
+              "1958" ;
+      <http://purl.org/dc/elements/1.1/title>
+              "Red Alert" .
+
+person:StanleyKubrick
+      a       person: ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+              "Kubrick" ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+              "Stanley" .
+
+movie:clockworkOrange
+      a       movie: ;
+      <http://purl.org/dc/elements/1.1/date>
+              "1971" ;
+      <http://purl.org/dc/elements/1.1/title>
+              "A Clockwork Orange" ;
+      movie:director person:StanleyKubrick ;
+      movie:genre "Crime, Drama, Sci-Fi" ;
+      movie:originalWork book:redAlert .
+
+person:peterGeorge
+      a       person: ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#Family>
+              "George" ;
+      <http://www.w3.org/2001/vcard-rdf/3.0#Given>
+              "Peter" .

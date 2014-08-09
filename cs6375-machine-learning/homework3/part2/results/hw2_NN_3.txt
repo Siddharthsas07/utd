@@ -1,0 +1,41 @@
+
+Time taken to build model: 101.25 seconds
+Time taken to test model on training data: 0.57 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         463              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0076
+Root mean squared error                  0.0131
+Relative absolute error                  1.9336 %
+Root relative squared error              2.9581 %
+Total Number of Instances              463     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 340   0 |   a = -1
+   0 123 |   b = 1
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         441               92.2594 %
+Incorrectly Classified Instances        37                7.7406 %
+Kappa statistic                          0.8105
+Mean absolute error                      0.0873
+Root mean squared error                  0.2469
+Relative absolute error                 22.1854 %
+Root relative squared error             55.4758 %
+Total Number of Instances              478     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 323  25 |   a = -1
+  12 118 |   b = 1
+
